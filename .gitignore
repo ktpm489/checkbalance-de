@@ -46,3 +46,4 @@ audit-*.json
 npm-audit*.json
 npm-audit*.csv
 audit-*.csv
+./node_modules
