@@ -56,7 +56,7 @@ function getRandomDelay(min, max) {
 async function checkTorProxy() {
   return new Promise((resolve, reject) => {
     const socket = new net.Socket();
-    socket.setTimeout(5000);
+    socket.setTimeout(3000); // Reduced from 5000
 
     socket.connect(TOR_CONFIG.port, TOR_CONFIG.host, () => {
       console.log(`✓ Tor proxy is accessible at ${TOR_CONFIG.host}:${TOR_CONFIG.port}`);
@@ -123,11 +123,11 @@ async function forceNewCircuit() {
   }
 
   console.log("  Waiting for new Tor circuits...");
-  await new Promise((resolve) => setTimeout(resolve, 8000));
+  await new Promise((resolve) => setTimeout(resolve, 4000)); // Reduced from 8000
 }
 
 // Verify IP change with retries
-async function verifyIPChange(previousIP, maxAttempts = 5) {
+async function verifyIPChange(previousIP, maxAttempts = 3) { // Reduced from 5
   let attempts = 0;
   
   while (attempts < maxAttempts) {
@@ -138,13 +138,13 @@ async function verifyIPChange(previousIP, maxAttempts = 5) {
         return newIP;
       } else {
         console.log(`  ⚠️ IP unchanged (${newIP}), waiting longer... (${attempts + 1}/${maxAttempts})`);
-        await new Promise((resolve) => setTimeout(resolve, 5000));
+        await new Promise((resolve) => setTimeout(resolve, 3000)); // Reduced from 5000
         attempts++;
       }
     } catch (err) {
       console.log(`  Failed to check IP: ${err.message}`);
       attempts++;
-      await new Promise((resolve) => setTimeout(resolve, 3000));
+      await new Promise((resolve) => setTimeout(resolve, 2000)); // Reduced from 3000
     }
   }
   
@@ -202,22 +202,22 @@ async function scrapeDebankProfile(address, browser, retryCount = 0, maxRetries 
     console.log(`  Viewport: ${viewport.width}x${viewport.height}`);
     console.log(`  Navigating to ${address}...`);
 
-    // Navigate with longer timeout
+    // Navigate with timeout
     await page.goto(url, {
-      waitUntil: "networkidle0",
-      timeout: 90000,
+      waitUntil: "domcontentloaded", // Changed from networkidle0 for faster loading
+      timeout: 60000, // Reduced from 90000
     });
 
-    // Random wait time with human-like behavior
-    const pageLoadDelay = getRandomDelay(15000, 35000);
+    // Optimized wait time - reduced significantly
+    const pageLoadDelay = getRandomDelay(4000, 7000); // Reduced from 15000-35000
     console.log(`  Waiting ${(pageLoadDelay / 1000).toFixed(2)}s for content to load...`);
     await new Promise((resolve) => setTimeout(resolve, pageLoadDelay));
 
-    // Simulate human scrolling behavior
+    // Simulate faster scrolling behavior
     await page.evaluate(async () => {
       await new Promise((resolve) => {
         let totalHeight = 0;
-        const distance = 100;
+        const distance = 150; // Increased from 100 for faster scroll
         const timer = setInterval(() => {
           const scrollHeight = document.body.scrollHeight;
           window.scrollBy(0, distance);
@@ -227,11 +227,11 @@ async function scrapeDebankProfile(address, browser, retryCount = 0, maxRetries 
             clearInterval(timer);
             resolve();
           }
-        }, 100);
+        }, 80); // Reduced from 100 for faster scroll
       });
     });
 
-    await new Promise((resolve) => setTimeout(resolve, 2000));
+    await new Promise((resolve) => setTimeout(resolve, 1000)); // Reduced from 2000
 
     // Enhanced selector list with more variations
     const selectors = [
@@ -248,10 +248,10 @@ async function scrapeDebankProfile(address, browser, retryCount = 0, maxRetries 
     let totalAsset = null;
     let selectorUsed = null;
 
-    // Try each selector with extended wait time
+    // Try each selector with optimized wait time
     for (const selector of selectors) {
       try {
-        await page.waitForSelector(selector, { timeout: 10000 });
+        await page.waitForSelector(selector, { timeout: 7000 }); // Reduced from 10000
         totalAsset = await page.$eval(selector, (el) => el.textContent.trim());
         if (totalAsset && totalAsset !== '' && totalAsset !== '0' && !totalAsset.includes('undefined')) {
           selectorUsed = selector;
@@ -368,7 +368,7 @@ async function scrapeMultipleAddresses(addresses) {
           // Continue anyway
         }
 
-        const circuitDelay = getRandomDelay(3000, 6000);
+        const circuitDelay = getRandomDelay(2000, 4000); // Reduced from 3000-6000
         console.log(`  Waiting ${(circuitDelay / 1000).toFixed(2)}s for circuit stabilization...`);
         await new Promise((resolve) => setTimeout(resolve, circuitDelay));
       }
@@ -424,7 +424,7 @@ async function scrapeMultipleAddresses(addresses) {
             console.log(`  ⚠️ Warning: ${err.message}`);
           }
           
-          const circuitDelay = getRandomDelay(3000, 6000);
+          const circuitDelay = getRandomDelay(2000, 4000); // Reduced from 3000-6000
           console.log(`  Waiting ${(circuitDelay / 1000).toFixed(2)}s for circuit stabilization...`);
           await new Promise((resolve) => setTimeout(resolve, circuitDelay));
           
@@ -458,9 +458,9 @@ async function scrapeMultipleAddresses(addresses) {
         failedAddresses.push(address);
       }
 
-      // Random delay between requests
+      // Optimized delay between requests
       if (i < addresses.length - 1) {
-        const requestDelay = getRandomDelay(8000, 20000);
+        const requestDelay = getRandomDelay(1000, 5000); // Reduced from 8000-20000
         console.log(`\n  ⏱️ Waiting ${(requestDelay / 1000).toFixed(2)}s before next request...`);
         await new Promise((resolve) => setTimeout(resolve, requestDelay));
       }
