@@ -204,7 +204,7 @@ async function scrapeDebankProfile(address, browser, retryCount = 0, maxRetries 
 
     // Navigate with timeout
     await page.goto(url, {
-      waitUntil: "domcontentloaded", // Changed from networkidle0 for faster loading
+      waitUntil: "networkidle0", // Changed from networkidle0 for faster loading
       timeout: 60000, // Reduced from 90000
     });
 
@@ -460,7 +460,7 @@ async function scrapeMultipleAddresses(addresses) {
 
       // Optimized delay between requests
       if (i < addresses.length - 1) {
-        const requestDelay = getRandomDelay(1000, 5000); // Reduced from 8000-20000
+        const requestDelay = getRandomDelay(1000, 3000); // Reduced from 8000-20000
         console.log(`\n  ⏱️ Waiting ${(requestDelay / 1000).toFixed(2)}s before next request...`);
         await new Promise((resolve) => setTimeout(resolve, requestDelay));
       }
@@ -501,8 +501,6 @@ async function scrapeMultipleAddresses(addresses) {
 
 // Example usage
 const raw = `
-0x61cd97156738be47aefab2df60657302a98008ae
-0x6433cc935b75de66befa4f751274d6db97f02512
 0x654b22705f2a06cd6d9120d2ac0f7dd659ebfc6e
 0x6780a7be5ed085de037ccf1a3214d2a8d463879c
 0x6ca07af3682375fae1d3ad5b66e684c4d6aef783
