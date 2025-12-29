@@ -1,15 +1,11 @@
-address,amount_usd,change_percent,error
-0x61cd97156738be47aefab2df60657302a98008ae,0,+0.83%,
-0x6433cc935b75de66befa4f751274d6db97f02512,0,+1.46%,
-0x7f0298c8ffc109c4746fee3bf8d90749e95795ea,0,+100.00%,
-0x8f7ab4721c4954c612af6e6d9200511c3ae115d1,0,+0.58%,
-0x9f2cbab6afb0aa5ef51f8c226ea61be78422c7bf,0,+0.48%,
-0xa5b053fb2e1a0d391b24408a4500eac3051b8b95,0,+0%,
-0xad4d0154092423bfafa8dfc548adb7b572fd022f,0,+0.40%,
-0xb909610f6d4001c44d000881961d6183a76b01c6,0,+100.00%,
-0xbd075c573eb13796ff882e61454e3b13ab420f42,0,+1.05%,
-0xc3dac2f35836d5ba9fff6a8fbf7a56bafb6b7d63,0,+0%,
-0xd2e37a8fda1523b8accc5191800bf46da0794872,0,+0%,
-0xd302d197c0fce25cc2d49d76eae391a6c49d7dcb,0,+0%,
-0xd621fbf9c155a1ba65844654533341af360e3b67,0,+0%,
-0xdcd89b59a34dfc4052f12495b6d3452a5ad5d1c7,0,+1.04%,
+address,amount_usd,success,selector_used,user_agent
+0x42285a766208bb5c8bfd678758f7e475d42c36af,0,true,[class*=""HeaderInfo_totalAssetInner""],"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+0x6f5e2c0e56ff2d1187b1628d17b63e2dfa2f59b6,0,true,[class*=""HeaderInfo_totalAssetInner""],Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/121.0
+0x7bb00bfebc4fafefc4a5eae0311dd45204a7cad7,0,true,[class*=""HeaderInfo_totalAssetInner""],"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15"
+0x9cf7db3586e0089d932d2b8bc96e0da753c5c737,0,true,[class*=""HeaderInfo_totalAssetInner""],Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0
+0xa32c266df58fb884bc1c00f528dcad6674efd304,0,true,[class*=""HeaderInfo_totalAssetInner""],"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+0xb7134086a8a88867268214b8a2ce21f92a5b049b,0,true,[class*=""HeaderInfo_totalAssetInner""],Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0
+0xb863ef9b3cb6619ba98080a48dba05612af52585,0,true,[class*=""HeaderInfo_totalAssetInner""],"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15"
+0xcf655bae9b51aeeea7d04c8b2611d457fad588a7,0,true,[class*=""HeaderInfo_totalAssetInner""],"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+0xda11abd3f013e3600ad62b5a66ddbbc20a3d2084,0,true,[class*=""HeaderInfo_totalAssetInner""],Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/121.0
+0xeccdcfdb9c3f48d64aa9aa812208bc8a0009eaf8,0,true,[class*=""HeaderInfo_totalAssetInner""],"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15"
