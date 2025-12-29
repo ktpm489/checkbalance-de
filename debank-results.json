@@ -1,736 +1,114 @@
 {
-  "timestamp": "2025-12-26T08:54:10.015Z",
+  "timestamp": "2025-12-29T01:45:34.661Z",
   "summary": {
-    "total": 51,
-    "successful": 51,
+    "total": 8,
+    "successful": 8,
     "failed": 0,
     "successRate": "100.0%"
   },
   "ipRotationLog": [
     {
       "request": 0,
-      "ip": "176.65.149.69",
+      "ip": "107.189.5.121",
       "address": "Initial"
     },
     {
       "request": "1-retry-1",
-      "ip": "192.42.116.180",
-      "address": "0x61cd97156738be47aefab2df60657302a98008ae (retry)"
-    },
-    {
-      "request": 2,
-      "ip": "109.70.100.5",
-      "address": "0x6433cc935b75de66befa4f751274d6db97f02512"
-    },
-    {
-      "request": 3,
-      "ip": "193.189.100.204",
-      "address": "0x654b22705f2a06cd6d9120d2ac0f7dd659ebfc6e"
-    },
-    {
-      "request": "3-retry-1",
-      "ip": "185.156.72.7",
+      "ip": "171.25.193.20",
       "address": "0x654b22705f2a06cd6d9120d2ac0f7dd659ebfc6e (retry)"
     },
     {
-      "request": 4,
-      "ip": "185.177.238.9",
+      "request": 2,
+      "ip": "171.25.193.82",
       "address": "0x6780a7be5ed085de037ccf1a3214d2a8d463879c"
     },
     {
-      "request": 5,
-      "ip": "185.220.100.252",
+      "request": 3,
+      "ip": "104.244.78.233",
       "address": "0x6ca07af3682375fae1d3ad5b66e684c4d6aef783"
     },
     {
-      "request": 6,
-      "ip": "45.80.158.143",
+      "request": 4,
+      "ip": "80.67.167.81",
       "address": "0x707b5e0447cd57c69801b0c274c548800024e7f4"
     },
     {
-      "request": 7,
-      "ip": "185.246.188.74",
+      "request": 5,
+      "ip": "192.42.116.173",
       "address": "0x71b585d876e426518a115c7a3185323474ff21e6"
     },
     {
-      "request": "7-retry-1",
-      "ip": "185.220.101.188",
-      "address": "0x71b585d876e426518a115c7a3185323474ff21e6 (retry)"
-    },
-    {
-      "request": 8,
-      "ip": "171.25.193.38",
+      "request": 6,
+      "ip": "45.84.107.74",
       "address": "0x73b1e850f1c360730ec67aeb3fa144a88327c6e7"
     },
     {
-      "request": 9,
-      "ip": "94.16.116.81",
+      "request": 7,
+      "ip": "93.94.51.243",
       "address": "0x74ba16a57f81dffb573f0427030f1502833bb040"
     },
     {
-      "request": "9-retry-1",
-      "ip": "193.189.100.206",
-      "address": "0x74ba16a57f81dffb573f0427030f1502833bb040 (retry)"
-    },
-    {
-      "request": 10,
-      "ip": "185.220.101.36",
+      "request": 8,
+      "ip": "192.42.116.174",
       "address": "0x7f0298c8ffc109c4746fee3bf8d90749e95795ea"
-    },
-    {
-      "request": 11,
-      "ip": "192.76.153.253",
-      "address": "0x7f1abe8c1de9dc475fc330688d739b706ac4aeb6"
-    },
-    {
-      "request": 12,
-      "ip": "195.47.238.177",
-      "address": "0x81e9137e1d3c8ec6dc5d3af6b61dbd1ba11beeb6"
-    },
-    {
-      "request": 13,
-      "ip": "176.65.149.195",
-      "address": "0x841becc07885fde1530dda577eeb129837eaa333"
-    },
-    {
-      "request": 14,
-      "ip": "185.220.101.28",
-      "address": "0x8a3630c9a91f4a1db8b36ad38f539294eaa434c9"
-    },
-    {
-      "request": 15,
-      "ip": "185.220.100.244",
-      "address": "0x8cc0ab3c993ab8c4b87ce2570457af00788ff6ac"
-    },
-    {
-      "request": 16,
-      "ip": "185.220.101.186",
-      "address": "0x8d7ce1107aebee1e3a9eb4da703da1a2b36b33ae"
-    },
-    {
-      "request": 17,
-      "ip": "185.220.101.26",
-      "address": "0x8f0d30188584b606d96fb482eef0b61b5713c3ae"
-    },
-    {
-      "request": 18,
-      "ip": "185.181.61.201",
-      "address": "0x8f7ab4721c4954c612af6e6d9200511c3ae115d1"
-    },
-    {
-      "request": 19,
-      "ip": "45.138.16.107",
-      "address": "0x90ca0eacf720c8c86ef50109cc19dccabd6e0427"
-    },
-    {
-      "request": 20,
-      "ip": "185.220.101.164",
-      "address": "0x91c3b834573ef1301ceb0822bcb95e0f7ccd42ec"
-    },
-    {
-      "request": 21,
-      "ip": "109.71.252.182",
-      "address": "0x99c2a232abebccb6dac6411d94b2f08369e00355"
-    },
-    {
-      "request": "21-retry-1",
-      "ip": "192.42.116.211",
-      "address": "0x99c2a232abebccb6dac6411d94b2f08369e00355 (retry)"
-    },
-    {
-      "request": 22,
-      "ip": "185.220.101.7",
-      "address": "0x9c9bc80806a8e43b0b6b1038bfcd4be74e23106a"
-    },
-    {
-      "request": 23,
-      "ip": "178.20.55.182",
-      "address": "0x9ec8f246c6acf5f6446ed2f7ea5b92659c27178b"
-    },
-    {
-      "request": "23-retry-1",
-      "ip": "192.42.116.194",
-      "address": "0x9ec8f246c6acf5f6446ed2f7ea5b92659c27178b (retry)"
-    },
-    {
-      "request": "23-retry-2",
-      "ip": "104.244.73.43",
-      "address": "0x9ec8f246c6acf5f6446ed2f7ea5b92659c27178b (retry)"
-    },
-    {
-      "request": 24,
-      "ip": "204.76.203.207",
-      "address": "0x9f2cbab6afb0aa5ef51f8c226ea61be78422c7bf"
-    },
-    {
-      "request": 25,
-      "ip": "45.84.107.54",
-      "address": "0xa5b053fb2e1a0d391b24408a4500eac3051b8b95"
-    },
-    {
-      "request": 26,
-      "ip": "185.231.33.38",
-      "address": "0xabedbe8c3ece31e27831cd945a824fd6b91fc2e5"
-    },
-    {
-      "request": 27,
-      "ip": "185.243.218.229",
-      "address": "0xad4d0154092423bfafa8dfc548adb7b572fd022f"
-    },
-    {
-      "request": 28,
-      "ip": "78.159.131.225",
-      "address": "0xafef76d5de3cb0ab0c5f6a71f6f3a22cbce4407e"
-    },
-    {
-      "request": 29,
-      "ip": "45.84.107.55",
-      "address": "0xb8a2068435741b6997d22c1b8b573150aa26cf78"
-    },
-    {
-      "request": 30,
-      "ip": "185.220.100.255",
-      "address": "0xb909610f6d4001c44d000881961d6183a76b01c6"
-    },
-    {
-      "request": 31,
-      "ip": "185.246.190.136",
-      "address": "0xbd075c573eb13796ff882e61454e3b13ab420f42"
-    },
-    {
-      "request": 32,
-      "ip": "185.220.101.58",
-      "address": "0xbd78b972560efe06bc46a5d45be93fe523025463"
-    },
-    {
-      "request": "32-retry-1",
-      "ip": "5.79.66.19",
-      "address": "0xbd78b972560efe06bc46a5d45be93fe523025463 (retry)"
-    },
-    {
-      "request": 33,
-      "ip": "185.220.101.8",
-      "address": "0xbd9ba9d8d13c711eb5cde9b22723e7b1939e9c78"
-    },
-    {
-      "request": 34,
-      "ip": "45.66.35.32",
-      "address": "0xbefe58f4f74c3b5bd6c952ed551c9810dce3c9ac"
-    },
-    {
-      "request": 35,
-      "ip": "93.94.51.243",
-      "address": "0xc03f81a789036646ef9f5554962b868c5e179a5b"
-    },
-    {
-      "request": 36,
-      "ip": "193.36.132.21",
-      "address": "0xc3dac2f35836d5ba9fff6a8fbf7a56bafb6b7d63"
-    },
-    {
-      "request": 37,
-      "ip": "45.138.16.240",
-      "address": "0xc78ced0f4d6ce02e43ed68d248d51fd5150fda7e"
-    },
-    {
-      "request": 38,
-      "ip": "185.220.101.15",
-      "address": "0xc9987910d4fcb5eec8b21fc2e9ca30395acadb34"
-    },
-    {
-      "request": 39,
-      "ip": "185.220.101.45",
-      "address": "0xca0e686d4400570db2b879c471f74427ff994e0e"
-    },
-    {
-      "request": 40,
-      "ip": "185.243.218.229",
-      "address": "0xcb122f372cb0a2d1edf8fcadad82c24eea618981"
-    },
-    {
-      "request": 41,
-      "ip": "185.67.82.114",
-      "address": "0xd2e37a8fda1523b8accc5191800bf46da0794872"
-    },
-    {
-      "request": "41-retry-1",
-      "ip": "171.25.193.80",
-      "address": "0xd2e37a8fda1523b8accc5191800bf46da0794872 (retry)"
-    },
-    {
-      "request": 42,
-      "ip": "38.97.116.245",
-      "address": "0xd302d197c0fce25cc2d49d76eae391a6c49d7dcb"
-    },
-    {
-      "request": "42-retry-1",
-      "ip": "2.58.56.43",
-      "address": "0xd302d197c0fce25cc2d49d76eae391a6c49d7dcb (retry)"
-    },
-    {
-      "request": 43,
-      "ip": "213.176.18.193",
-      "address": "0xd621fbf9c155a1ba65844654533341af360e3b67"
-    },
-    {
-      "request": 44,
-      "ip": "193.189.100.206",
-      "address": "0xd8f05e86fa51619d0867579e586e2a3a0097ef14"
-    },
-    {
-      "request": 45,
-      "ip": "171.25.193.80",
-      "address": "0xdc86e2c5745a1248ea77993d55562434a4dea3ee"
-    },
-    {
-      "request": 46,
-      "ip": "109.70.100.9",
-      "address": "0xdcd89b59a34dfc4052f12495b6d3452a5ad5d1c7"
-    },
-    {
-      "request": "46-retry-1",
-      "ip": "193.189.100.195",
-      "address": "0xdcd89b59a34dfc4052f12495b6d3452a5ad5d1c7 (retry)"
-    },
-    {
-      "request": 47,
-      "ip": "185.220.101.31",
-      "address": "0xe07c5e3fadfe965a49ea40f44a7665457eee0693"
-    },
-    {
-      "request": 48,
-      "ip": "45.94.31.68",
-      "address": "0xe182b236cd93c3cc2be4af5e0cddc2ec8bf9a5a1"
-    },
-    {
-      "request": 49,
-      "ip": "45.84.107.128",
-      "address": "0xe2458f8d9ae4a2458b240d05d42993d4510b8030"
-    },
-    {
-      "request": 50,
-      "ip": "176.65.149.84",
-      "address": "0xe84ed3ba93c442ee46cba23adbdb828be024684b"
-    },
-    {
-      "request": 51,
-      "ip": "185.220.101.144",
-      "address": "0xe8a2bfaadff50c8ca75aac494134da77f9820b24"
-    },
-    {
-      "request": "51-retry-1",
-      "ip": "80.67.167.81",
-      "address": "0xe8a2bfaadff50c8ca75aac494134da77f9820b24 (retry)"
     }
   ],
   "failedAddresses": [],
   "results": [
     {
-      "address": "0x61cd97156738be47aefab2df60657302a98008ae",
-      "totalAsset": "$0+0.83%",
+      "address": "0x654b22705f2a06cd6d9120d2ac0f7dd659ebfc6e",
+      "totalAsset": "$1,159+1.18%",
       "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
       "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
-      "viewport": "1366x768",
-      "success": true
-    },
-    {
-      "address": "0x6433cc935b75de66befa4f751274d6db97f02512",
-      "totalAsset": "$0+1.46%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "viewport": "1536x864",
-      "success": true
-    },
-    {
-      "address": "0x654b22705f2a06cd6d9120d2ac0f7dd659ebfc6e",
-      "totalAsset": "$1,135+9.56%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "viewport": "1536x864",
       "success": true
     },
     {
       "address": "0x6780a7be5ed085de037ccf1a3214d2a8d463879c",
-      "totalAsset": "$19+1.59%",
+      "totalAsset": "$19+1.27%",
       "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "viewport": "1366x768",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
       "success": true
     },
     {
       "address": "0x6ca07af3682375fae1d3ad5b66e684c4d6aef783",
-      "totalAsset": "$2,459+14.98%",
+      "totalAsset": "$2,112-3.28%",
       "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
-      "viewport": "1440x900",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "success": true
     },
     {
       "address": "0x707b5e0447cd57c69801b0c274c548800024e7f4",
-      "totalAsset": "$215-57.25%",
+      "totalAsset": "$452+11.17%",
       "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
-      "viewport": "1920x1080",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:109.0) Gecko/20100101 Firefox/115.0",
       "success": true
     },
     {
       "address": "0x71b585d876e426518a115c7a3185323474ff21e6",
-      "totalAsset": "$7,459-0.00%",
+      "totalAsset": "$7,458+0.00%",
       "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
-      "viewport": "1366x768",
+      "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
       "success": true
     },
     {
       "address": "0x73b1e850f1c360730ec67aeb3fa144a88327c6e7",
-      "totalAsset": "$236+1.79%",
+      "totalAsset": "$248+2.11%",
       "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "viewport": "1366x768",
+      "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
       "success": true
     },
     {
       "address": "0x74ba16a57f81dffb573f0427030f1502833bb040",
-      "totalAsset": "$22-96.78%",
+      "totalAsset": "$774+6.20%",
       "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
-      "viewport": "1366x768",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:109.0) Gecko/20100101 Firefox/115.0",
       "success": true
     },
     {
       "address": "0x7f0298c8ffc109c4746fee3bf8d90749e95795ea",
-      "totalAsset": "$0+100.00%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
-      "viewport": "1920x1080",
-      "success": true
-    },
-    {
-      "address": "0x7f1abe8c1de9dc475fc330688d739b706ac4aeb6",
-      "totalAsset": "$59,793+0.82%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/121.0",
-      "viewport": "1366x768",
-      "success": true
-    },
-    {
-      "address": "0x81e9137e1d3c8ec6dc5d3af6b61dbd1ba11beeb6",
-      "totalAsset": "$149,417+0.82%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "viewport": "1536x864",
-      "success": true
-    },
-    {
-      "address": "0x841becc07885fde1530dda577eeb129837eaa333",
-      "totalAsset": "$16+0.65%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
-      "viewport": "1920x1080",
-      "success": true
-    },
-    {
-      "address": "0x8a3630c9a91f4a1db8b36ad38f539294eaa434c9",
-      "totalAsset": "$3,463+15.83%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:109.0) Gecko/20100101 Firefox/115.0",
-      "viewport": "1440x900",
-      "success": true
-    },
-    {
-      "address": "0x8cc0ab3c993ab8c4b87ce2570457af00788ff6ac",
-      "totalAsset": "$44+0.79%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "viewport": "1440x900",
-      "success": true
-    },
-    {
-      "address": "0x8d7ce1107aebee1e3a9eb4da703da1a2b36b33ae",
-      "totalAsset": "$2,198+0.65%",
+      "totalAsset": "$0+1.29%",
       "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
       "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
-      "viewport": "1366x768",
-      "success": true
-    },
-    {
-      "address": "0x8f0d30188584b606d96fb482eef0b61b5713c3ae",
-      "totalAsset": "$60-5.59%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "viewport": "1536x864",
-      "success": true
-    },
-    {
-      "address": "0x8f7ab4721c4954c612af6e6d9200511c3ae115d1",
-      "totalAsset": "$0+0.58%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
-      "viewport": "1920x1080",
-      "success": true
-    },
-    {
-      "address": "0x90ca0eacf720c8c86ef50109cc19dccabd6e0427",
-      "totalAsset": "$7+30.85%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
-      "viewport": "1440x900",
-      "success": true
-    },
-    {
-      "address": "0x91c3b834573ef1301ceb0822bcb95e0f7ccd42ec",
-      "totalAsset": "$1,168+0.20%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/121.0",
-      "viewport": "1366x768",
-      "success": true
-    },
-    {
-      "address": "0x99c2a232abebccb6dac6411d94b2f08369e00355",
-      "totalAsset": "$168+3.91%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:109.0) Gecko/20100101 Firefox/115.0",
-      "viewport": "1440x900",
-      "success": true
-    },
-    {
-      "address": "0x9c9bc80806a8e43b0b6b1038bfcd4be74e23106a",
-      "totalAsset": "$84+11.45%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:109.0) Gecko/20100101 Firefox/115.0",
-      "viewport": "1920x1080",
-      "success": true
-    },
-    {
-      "address": "0x9ec8f246c6acf5f6446ed2f7ea5b92659c27178b",
-      "totalAsset": "$433+0.44%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "viewport": "1536x864",
-      "success": true
-    },
-    {
-      "address": "0x9f2cbab6afb0aa5ef51f8c226ea61be78422c7bf",
-      "totalAsset": "$0+0.48%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
-      "viewport": "1920x1080",
-      "success": true
-    },
-    {
-      "address": "0xa5b053fb2e1a0d391b24408a4500eac3051b8b95",
-      "totalAsset": "$0+0%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
-      "viewport": "1366x768",
-      "success": true
-    },
-    {
-      "address": "0xabedbe8c3ece31e27831cd945a824fd6b91fc2e5",
-      "totalAsset": "$3,093+13.25%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
-      "viewport": "1536x864",
-      "success": true
-    },
-    {
-      "address": "0xad4d0154092423bfafa8dfc548adb7b572fd022f",
-      "totalAsset": "$0+0.40%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/121.0",
-      "viewport": "1920x1080",
-      "success": true
-    },
-    {
-      "address": "0xafef76d5de3cb0ab0c5f6a71f6f3a22cbce4407e",
-      "totalAsset": "$25+0.21%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "viewport": "1536x864",
-      "success": true
-    },
-    {
-      "address": "0xb8a2068435741b6997d22c1b8b573150aa26cf78",
-      "totalAsset": "$925+7.07%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "viewport": "1920x1080",
-      "success": true
-    },
-    {
-      "address": "0xb909610f6d4001c44d000881961d6183a76b01c6",
-      "totalAsset": "$0+100.00%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "viewport": "1366x768",
-      "success": true
-    },
-    {
-      "address": "0xbd075c573eb13796ff882e61454e3b13ab420f42",
-      "totalAsset": "$0+1.05%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "viewport": "1536x864",
-      "success": true
-    },
-    {
-      "address": "0xbd78b972560efe06bc46a5d45be93fe523025463",
-      "totalAsset": "$10+1.17%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "viewport": "1920x1080",
-      "success": true
-    },
-    {
-      "address": "0xbd9ba9d8d13c711eb5cde9b22723e7b1939e9c78",
-      "totalAsset": "$2,630-0.19%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
-      "viewport": "1440x900",
-      "success": true
-    },
-    {
-      "address": "0xbefe58f4f74c3b5bd6c952ed551c9810dce3c9ac",
-      "totalAsset": "$7,301+1.30%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "viewport": "1920x1080",
-      "success": true
-    },
-    {
-      "address": "0xc03f81a789036646ef9f5554962b868c5e179a5b",
-      "totalAsset": "$1,458+2.24%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/121.0",
-      "viewport": "1366x768",
-      "success": true
-    },
-    {
-      "address": "0xc3dac2f35836d5ba9fff6a8fbf7a56bafb6b7d63",
-      "totalAsset": "$0+0%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:109.0) Gecko/20100101 Firefox/115.0",
-      "viewport": "1920x1080",
-      "success": true
-    },
-    {
-      "address": "0xc78ced0f4d6ce02e43ed68d248d51fd5150fda7e",
-      "totalAsset": "$392+2.09%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/121.0",
-      "viewport": "1440x900",
-      "success": true
-    },
-    {
-      "address": "0xc9987910d4fcb5eec8b21fc2e9ca30395acadb34",
-      "totalAsset": "$5,298+1.04%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/121.0",
-      "viewport": "1440x900",
-      "success": true
-    },
-    {
-      "address": "0xca0e686d4400570db2b879c471f74427ff994e0e",
-      "totalAsset": "$398+0.59%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "viewport": "1366x768",
-      "success": true
-    },
-    {
-      "address": "0xcb122f372cb0a2d1edf8fcadad82c24eea618981",
-      "totalAsset": "$10,517+2.00%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "viewport": "1536x864",
-      "success": true
-    },
-    {
-      "address": "0xd2e37a8fda1523b8accc5191800bf46da0794872",
-      "totalAsset": "$0+0%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
-      "viewport": "1536x864",
-      "success": true
-    },
-    {
-      "address": "0xd302d197c0fce25cc2d49d76eae391a6c49d7dcb",
-      "totalAsset": "$0+0%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "viewport": "1366x768",
-      "success": true
-    },
-    {
-      "address": "0xd621fbf9c155a1ba65844654533341af360e3b67",
-      "totalAsset": "$0+0%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
-      "viewport": "1536x864",
-      "success": true
-    },
-    {
-      "address": "0xd8f05e86fa51619d0867579e586e2a3a0097ef14",
-      "totalAsset": "$474+0.43%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/121.0",
-      "viewport": "1366x768",
-      "success": true
-    },
-    {
-      "address": "0xdc86e2c5745a1248ea77993d55562434a4dea3ee",
-      "totalAsset": "$128+0.10%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:109.0) Gecko/20100101 Firefox/115.0",
-      "viewport": "1366x768",
-      "success": true
-    },
-    {
-      "address": "0xdcd89b59a34dfc4052f12495b6d3452a5ad5d1c7",
-      "totalAsset": "$0+1.04%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
-      "viewport": "1366x768",
-      "success": true
-    },
-    {
-      "address": "0xe07c5e3fadfe965a49ea40f44a7665457eee0693",
-      "totalAsset": "$819-82.87%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "viewport": "1536x864",
-      "success": true
-    },
-    {
-      "address": "0xe182b236cd93c3cc2be4af5e0cddc2ec8bf9a5a1",
-      "totalAsset": "$746+0.87%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "viewport": "1440x900",
-      "success": true
-    },
-    {
-      "address": "0xe2458f8d9ae4a2458b240d05d42993d4510b8030",
-      "totalAsset": "$3,486+0.75%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "viewport": "1920x1080",
-      "success": true
-    },
-    {
-      "address": "0xe84ed3ba93c442ee46cba23adbdb828be024684b",
-      "totalAsset": "$16+10.79%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
-      "viewport": "1440x900",
-      "success": true
-    },
-    {
-      "address": "0xe8a2bfaadff50c8ca75aac494134da77f9820b24",
-      "totalAsset": "$356,541+1.05%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "viewport": "1920x1080",
       "success": true
     }
   ]

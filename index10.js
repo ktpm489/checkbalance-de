@@ -163,16 +163,16 @@ async function scrapeDebankProfile(address, browser, retryCount = 0, maxRetries 
     const userAgent = getRandomUserAgent();
     const language = getRandomLanguage();
     
-    // Set realistic viewport sizes
-    const viewports = [
-      { width: 1920, height: 1080 },
-      { width: 1366, height: 768 },
-      { width: 1536, height: 864 },
-      { width: 1440, height: 900 }
-    ];
-    const viewport = viewports[Math.floor(Math.random() * viewports.length)];
+    // // Set realistic viewport sizes
+    // const viewports = [
+    //   { width: 1920, height: 1080 },
+    //   { width: 1366, height: 768 },
+    //   { width: 1536, height: 864 },
+    //   { width: 1440, height: 900 }
+    // ];
+    // const viewport = viewports[Math.floor(Math.random() * viewports.length)];
     
-    await page.setViewport(viewport);
+    // await page.setViewport(viewport);
     await page.setUserAgent(userAgent);
     
     // Set additional headers to look more like a real browser
@@ -185,21 +185,21 @@ async function scrapeDebankProfile(address, browser, retryCount = 0, maxRetries 
       'Upgrade-Insecure-Requests': '1'
     });
 
-    // Inject random mouse movements and realistic behavior
-    await page.evaluateOnNewDocument(() => {
-      // Override navigator properties to avoid detection
-      Object.defineProperty(navigator, 'webdriver', {
-        get: () => undefined
-      });
+    // // Inject random mouse movements and realistic behavior
+    // await page.evaluateOnNewDocument(() => {
+    //   // Override navigator properties to avoid detection
+    //   Object.defineProperty(navigator, 'webdriver', {
+    //     get: () => undefined
+    //   });
       
-      // Add realistic window properties
-      Object.defineProperty(navigator, 'plugins', {
-        get: () => [1, 2, 3, 4, 5]
-      });
-    });
+    //   // Add realistic window properties
+    //   Object.defineProperty(navigator, 'plugins', {
+    //     get: () => [1, 2, 3, 4, 5]
+    //   });
+    // });
 
     console.log(`  Using User-Agent: ${userAgent.substring(0, 50)}...`);
-    console.log(`  Viewport: ${viewport.width}x${viewport.height}`);
+    // console.log(`  Viewport: ${viewport.width}x${viewport.height}`);
     console.log(`  Navigating to ${address}...`);
 
     // Navigate with timeout
@@ -209,40 +209,36 @@ async function scrapeDebankProfile(address, browser, retryCount = 0, maxRetries 
     });
 
     // Optimized wait time - reduced significantly
-    const pageLoadDelay = getRandomDelay(4000, 7000); // Reduced from 15000-35000
+    const pageLoadDelay = getRandomDelay(3000, 5000); // Reduced from 15000-35000
     console.log(`  Waiting ${(pageLoadDelay / 1000).toFixed(2)}s for content to load...`);
     await new Promise((resolve) => setTimeout(resolve, pageLoadDelay));
 
     // Simulate faster scrolling behavior
-    await page.evaluate(async () => {
-      await new Promise((resolve) => {
-        let totalHeight = 0;
-        const distance = 150; // Increased from 100 for faster scroll
-        const timer = setInterval(() => {
-          const scrollHeight = document.body.scrollHeight;
-          window.scrollBy(0, distance);
-          totalHeight += distance;
+    // await page.evaluate(async () => {
+    //   await new Promise((resolve) => {
+    //     let totalHeight = 0;
+    //     const distance = 150; // Increased from 100 for faster scroll
+    //     const timer = setInterval(() => {
+    //       const scrollHeight = document.body.scrollHeight;
+    //       window.scrollBy(0, distance);
+    //       totalHeight += distance;
 
-          if (totalHeight >= scrollHeight / 2) {
-            clearInterval(timer);
-            resolve();
-          }
-        }, 80); // Reduced from 100 for faster scroll
-      });
-    });
+    //       if (totalHeight >= scrollHeight / 2) {
+    //         clearInterval(timer);
+    //         resolve();
+    //       }
+    //     }, 80); // Reduced from 100 for faster scroll
+    //   });
+    // });
 
-    await new Promise((resolve) => setTimeout(resolve, 1000)); // Reduced from 2000
+    // await new Promise((resolve) => setTimeout(resolve, 1000)); // Reduced from 2000
 
     // Enhanced selector list with more variations
-    const selectors = [
-      ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      ".HeaderInfo_totalAssetInner__HyrdC",
+     const selectors = [
+      '.HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq',
+      // '.HeaderInfo_totalAssetInner__HyrdC',
       '[class*="HeaderInfo_totalAssetInner"]',
-      '[class*="totalAssetInner"]',
-      '[class*="totalAsset"]',
-      '[class*="HeaderInfo"]',
-      'div[class*="totalAsset"] span',
-      'div[class*="HeaderInfo"] span'
+      // '[class*="totalAsset"]'
     ];
 
     let totalAsset = null;
@@ -251,7 +247,7 @@ async function scrapeDebankProfile(address, browser, retryCount = 0, maxRetries 
     // Try each selector with optimized wait time
     for (const selector of selectors) {
       try {
-        await page.waitForSelector(selector, { timeout: 7000 }); // Reduced from 10000
+        await page.waitForSelector(selector, { timeout: 5000 }); // Reduced from 10000
         totalAsset = await page.$eval(selector, (el) => el.textContent.trim());
         if (totalAsset && totalAsset !== '' && totalAsset !== '0' && !totalAsset.includes('undefined')) {
           selectorUsed = selector;
@@ -289,7 +285,7 @@ async function scrapeDebankProfile(address, browser, retryCount = 0, maxRetries 
       totalAsset,
       selectorUsed,
       userAgent: userAgent,
-      viewport: `${viewport.width}x${viewport.height}`,
+    //   viewport: `${viewport.width}x${viewport.height}`,
       success: true
     };
 
@@ -368,7 +364,7 @@ async function scrapeMultipleAddresses(addresses) {
           // Continue anyway
         }
 
-        const circuitDelay = getRandomDelay(2000, 4000); // Reduced from 3000-6000
+        const circuitDelay = getRandomDelay(2000, 3000); // Reduced from 3000-6000
         console.log(`  Waiting ${(circuitDelay / 1000).toFixed(2)}s for circuit stabilization...`);
         await new Promise((resolve) => setTimeout(resolve, circuitDelay));
       }
@@ -460,7 +456,7 @@ async function scrapeMultipleAddresses(addresses) {
 
       // Optimized delay between requests
       if (i < addresses.length - 1) {
-        const requestDelay = getRandomDelay(1000, 3000); // Reduced from 8000-20000
+        const requestDelay = getRandomDelay(1000, 2000); // Reduced from 8000-20000
         console.log(`\n  ⏱️ Waiting ${(requestDelay / 1000).toFixed(2)}s before next request...`);
         await new Promise((resolve) => setTimeout(resolve, requestDelay));
       }
@@ -508,49 +504,7 @@ const raw = `
 0x71b585d876e426518a115c7a3185323474ff21e6
 0x73b1e850f1c360730ec67aeb3fa144a88327c6e7
 0x74ba16a57f81dffb573f0427030f1502833bb040
-0x7f0298c8ffc109c4746fee3bf8d90749e95795ea
-0x7f1abe8c1de9dc475fc330688d739b706ac4aeb6
-0x81e9137e1d3c8ec6dc5d3af6b61dbd1ba11beeb6
-0x841becc07885fde1530dda577eeb129837eaa333
-0x8a3630c9a91f4a1db8b36ad38f539294eaa434c9
-0x8cc0ab3c993ab8c4b87ce2570457af00788ff6ac
-0x8d7ce1107aebee1e3a9eb4da703da1a2b36b33ae
-0x8f0d30188584b606d96fb482eef0b61b5713c3ae
-0x8f7ab4721c4954c612af6e6d9200511c3ae115d1
-0x90ca0eacf720c8c86ef50109cc19dccabd6e0427
-0x91c3b834573ef1301ceb0822bcb95e0f7ccd42ec
-0x99c2a232abebccb6dac6411d94b2f08369e00355
-0x9c9bc80806a8e43b0b6b1038bfcd4be74e23106a
-0x9ec8f246c6acf5f6446ed2f7ea5b92659c27178b
-0x9f2cbab6afb0aa5ef51f8c226ea61be78422c7bf
-0xa5b053fb2e1a0d391b24408a4500eac3051b8b95
-0xabedbe8c3ece31e27831cd945a824fd6b91fc2e5
-0xad4d0154092423bfafa8dfc548adb7b572fd022f
-0xafef76d5de3cb0ab0c5f6a71f6f3a22cbce4407e
-0xb8a2068435741b6997d22c1b8b573150aa26cf78
-0xb909610f6d4001c44d000881961d6183a76b01c6
-0xbd075c573eb13796ff882e61454e3b13ab420f42
-0xbd78b972560efe06bc46a5d45be93fe523025463
-0xbd9ba9d8d13c711eb5cde9b22723e7b1939e9c78
-0xbefe58f4f74c3b5bd6c952ed551c9810dce3c9ac
-0xc03f81a789036646ef9f5554962b868c5e179a5b
-0xc3dac2f35836d5ba9fff6a8fbf7a56bafb6b7d63
-0xc78ced0f4d6ce02e43ed68d248d51fd5150fda7e
-0xc9987910d4fcb5eec8b21fc2e9ca30395acadb34
-0xca0e686d4400570db2b879c471f74427ff994e0e
-0xcb122f372cb0a2d1edf8fcadad82c24eea618981
-0xd2e37a8fda1523b8accc5191800bf46da0794872
-0xd302d197c0fce25cc2d49d76eae391a6c49d7dcb
-0xd621fbf9c155a1ba65844654533341af360e3b67
-0xd8f05e86fa51619d0867579e586e2a3a0097ef14
-0xdc86e2c5745a1248ea77993d55562434a4dea3ee
-0xdcd89b59a34dfc4052f12495b6d3452a5ad5d1c7
-0xe07c5e3fadfe965a49ea40f44a7665457eee0693
-0xe182b236cd93c3cc2be4af5e0cddc2ec8bf9a5a1
-0xe2458f8d9ae4a2458b240d05d42993d4510b8030
-0xe84ed3ba93c442ee46cba23adbdb828be024684b
-0xe8a2bfaadff50c8ca75aac494134da77f9820b24
-`;
+0x7f0298c8ffc109c4746fee3bf8d90749e95795ea`;
 
 const addresses = raw
   .trim()
