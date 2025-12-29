@@ -1,122 +1,2019 @@
 {
-  "timestamp": "2025-12-29T02:07:44.051Z",
+  "timestamp": "2025-12-29T05:09:58.784Z",
   "timing": {
-    "startTime": "2025-12-29T02:04:05.085Z",
-    "endTime": "2025-12-29T02:07:43.814Z",
-    "durationMs": 218729,
-    "durationFormatted": "3m 38s",
-    "averagePerAddressMs": 27341.125,
-    "averagePerAddressFormatted": "27s"
+    "startTime": "2025-12-29T03:24:11.034Z",
+    "endTime": "2025-12-29T05:09:58.579Z",
+    "durationMs": 6347545,
+    "durationFormatted": "1h 45m 47s",
+    "averagePerAddressMs": 42600.973154362415,
+    "averagePerAddressFormatted": "42s"
   },
   "summary": {
-    "total": 8,
-    "successful": 8,
+    "total": 149,
+    "successful": 149,
     "failed": 0,
     "successRate": "100.0%"
   },
   "ipRotationLog": [
     {
       "request": 0,
-      "ip": "192.42.116.216",
+      "ip": "192.42.116.191",
       "address": "Initial"
     },
     {
-      "request": "1-retry-1",
-      "ip": "192.42.116.186",
-      "address": "0x654b22705f2a06cd6d9120d2ac0f7dd659ebfc6e (retry)"
-    },
-    {
       "request": 2,
-      "ip": "45.66.35.29",
-      "address": "0x6780a7be5ed085de037ccf1a3214d2a8d463879c"
+      "ip": "188.239.191.25",
+      "address": "0x088f276fa36cab062c48283d75ceb24aa8a6f771"
     },
     {
       "request": 3,
-      "ip": "5.255.118.151",
-      "address": "0x6ca07af3682375fae1d3ad5b66e684c4d6aef783"
+      "ip": "192.42.116.213",
+      "address": "0x08cb7d04608cd6c3543edb287108bb4f8426b2a6"
+    },
+    {
+      "request": "3-retry-1",
+      "ip": "185.220.101.140",
+      "address": "0x08cb7d04608cd6c3543edb287108bb4f8426b2a6 (retry)"
     },
     {
       "request": 4,
-      "ip": "109.70.100.8",
-      "address": "0x707b5e0447cd57c69801b0c274c548800024e7f4"
+      "ip": "185.220.101.185",
+      "address": "0x096529d95d7742a02532ed8c672fdafa87bc4747"
     },
     {
       "request": 5,
-      "ip": "23.191.200.7",
-      "address": "0x71b585d876e426518a115c7a3185323474ff21e6"
+      "ip": "107.189.11.111",
+      "address": "0x0cb6271d8c43695841fe0d8c3cbb4ebe088ec2a3"
+    },
+    {
+      "request": "5-retry-1",
+      "ip": "62.133.60.208",
+      "address": "0x0cb6271d8c43695841fe0d8c3cbb4ebe088ec2a3 (retry)"
     },
     {
       "request": 6,
-      "ip": "45.13.225.69",
-      "address": "0x73b1e850f1c360730ec67aeb3fa144a88327c6e7"
+      "ip": "185.220.101.61",
+      "address": "0x0fcc60ba6ce0ea2cd094bf07f0cd7ea14e103772"
     },
     {
       "request": 7,
-      "ip": "45.80.158.93",
-      "address": "0x74ba16a57f81dffb573f0427030f1502833bb040"
+      "ip": "185.220.101.11",
+      "address": "0x12acf1f251f4d3c4a83d764b10e54c40f3013c38"
     },
     {
       "request": 8,
+      "ip": "193.189.100.205",
+      "address": "0x1e1e8a7335e29d93ec4c4e6b2e1fd64e0f307853"
+    },
+    {
+      "request": "8-retry-1",
+      "ip": "51.91.18.151",
+      "address": "0x1e1e8a7335e29d93ec4c4e6b2e1fd64e0f307853 (retry)"
+    },
+    {
+      "request": 9,
+      "ip": "192.42.116.175",
+      "address": "0x1f06b613e69c46186b15897f054cc16bc2bb10a0"
+    },
+    {
+      "request": "9-retry-1",
+      "ip": "185.100.87.192",
+      "address": "0x1f06b613e69c46186b15897f054cc16bc2bb10a0 (retry)"
+    },
+    {
+      "request": 10,
+      "ip": "185.220.100.251",
+      "address": "0x20f5ceea3835fa91c0d16e1eeb6c5359fa22cc2f"
+    },
+    {
+      "request": 11,
+      "ip": "45.66.35.30",
+      "address": "0x229c15011fda808a2b98d487ca55291641740062"
+    },
+    {
+      "request": "11-retry-1",
+      "ip": "109.70.100.3",
+      "address": "0x229c15011fda808a2b98d487ca55291641740062 (retry)"
+    },
+    {
+      "request": 12,
+      "ip": "185.220.101.59",
+      "address": "0x264ef753d3686d2f4a73a2852ced23ca3a6b6f76"
+    },
+    {
+      "request": 13,
+      "ip": "5.253.247.27",
+      "address": "0x2a64bfe71241e6bfca8aea600eabc363465ef776"
+    },
+    {
+      "request": 14,
+      "ip": "86.54.28.49",
+      "address": "0x2ad3641c227a977cacc5ce25a26b4f6e596e9775"
+    },
+    {
+      "request": 15,
+      "ip": "185.220.100.243",
+      "address": "0x2b2e3da881eb5eb7db391c7934cd34941cd5fbee"
+    },
+    {
+      "request": 16,
+      "ip": "88.80.26.2",
+      "address": "0x2d7235f2ccfdf29e346c591b9e97c05a493fc773"
+    },
+    {
+      "request": 17,
+      "ip": "185.220.101.132",
+      "address": "0x3606e39ed7cda9777b9469c40f5befa71a1eb6f6"
+    },
+    {
+      "request": 18,
+      "ip": "45.84.107.33",
+      "address": "0x393200a58da0047e1d4ae9559e3c9aa165ab2782"
+    },
+    {
+      "request": "18-retry-1",
+      "ip": "107.189.12.7",
+      "address": "0x393200a58da0047e1d4ae9559e3c9aa165ab2782 (retry)"
+    },
+    {
+      "request": 19,
+      "ip": "109.70.100.4",
+      "address": "0x3a9f851cb0df5f88f10b0b461a8e9bbbb11ab575"
+    },
+    {
+      "request": 20,
+      "ip": "66.94.111.228",
+      "address": "0x3c5477063da98a605624847ffd9ef4d8267378fd"
+    },
+    {
+      "request": "20-retry-1",
+      "ip": "192.42.116.217",
+      "address": "0x3c5477063da98a605624847ffd9ef4d8267378fd (retry)"
+    },
+    {
+      "request": "20-retry-2",
+      "ip": "85.93.31.31",
+      "address": "0x3c5477063da98a605624847ffd9ef4d8267378fd (retry)"
+    },
+    {
+      "request": 21,
+      "ip": "109.70.100.3",
+      "address": "0x3d734009ff16366a1d3805e762663cb147136d80"
+    },
+    {
+      "request": 22,
+      "ip": "45.84.107.74",
+      "address": "0x3f411483f9d772a8be8419792abe0313e8931440"
+    },
+    {
+      "request": 23,
+      "ip": "192.121.44.34",
+      "address": "0x3f93bb776eb15c1296112ba80f332910fc41da4d"
+    },
+    {
+      "request": 24,
+      "ip": "109.70.100.8",
+      "address": "0x3fb6e49beddaeb14282066083fa43159b9b95f4e"
+    },
+    {
+      "request": "24-retry-1",
+      "ip": "185.130.47.58",
+      "address": "0x3fb6e49beddaeb14282066083fa43159b9b95f4e (retry)"
+    },
+    {
+      "request": "24-retry-2",
+      "ip": "107.189.8.70",
+      "address": "0x3fb6e49beddaeb14282066083fa43159b9b95f4e (retry)"
+    },
+    {
+      "request": 25,
+      "ip": "45.66.35.20",
+      "address": "0x42285a766208bb5c8bfd678758f7e475d42c36af"
+    },
+    {
+      "request": 26,
+      "ip": "23.129.64.144",
+      "address": "0x43cf3e8d2893bc02ca91a52e967c76ee6739958d"
+    },
+    {
+      "request": 27,
+      "ip": "192.159.99.162",
+      "address": "0x468ad891d5c750f2b07a8d60ceb1bd83e1a9f141"
+    },
+    {
+      "request": 28,
+      "ip": "185.243.218.226",
+      "address": "0x47e60bdd18e186a68f4fcf6526b539d600626b1a"
+    },
+    {
+      "request": 29,
+      "ip": "192.42.116.195",
+      "address": "0x4bd684588dcc799625c0e66d02728ac8b4cf59af"
+    },
+    {
+      "request": 30,
+      "ip": "128.31.0.13",
+      "address": "0x4fc824f7047bfde9a0a8df810d196325b02c9248"
+    },
+    {
+      "request": 31,
+      "ip": "192.42.116.201",
+      "address": "0x578b6122b8aca611b51fdd04bee8e1319ce1e96e"
+    },
+    {
+      "request": 32,
+      "ip": "193.26.115.43",
+      "address": "0x586bbb69942efcbbdc6f711e37a97d2e372a0690"
+    },
+    {
+      "request": "32-retry-1",
+      "ip": "85.208.139.110",
+      "address": "0x586bbb69942efcbbdc6f711e37a97d2e372a0690 (retry)"
+    },
+    {
+      "request": 33,
+      "ip": "185.220.101.176",
+      "address": "0x59e3ce17e18b5615de9a86d45768d21f23439b7a"
+    },
+    {
+      "request": 34,
+      "ip": "192.42.116.209",
+      "address": "0x5c63cb44522c979f16e67ee4728349c149fb1ac6"
+    },
+    {
+      "request": 35,
+      "ip": "185.220.101.169",
+      "address": "0x5d73b898a0b1307ad54acf8c72f60edf07eb6f76"
+    },
+    {
+      "request": 36,
+      "ip": "185.241.208.82",
+      "address": "0x632cae603b960df08485a69c44b46abc74ec9ece"
+    },
+    {
+      "request": "36-retry-1",
+      "ip": "45.84.107.54",
+      "address": "0x632cae603b960df08485a69c44b46abc74ec9ece (retry)"
+    },
+    {
+      "request": 37,
+      "ip": "176.65.149.69",
+      "address": "0x67d06422914a71f3cbf168d80ce5a4b4c930b108"
+    },
+    {
+      "request": "37-retry-1",
+      "ip": "37.221.208.71",
+      "address": "0x67d06422914a71f3cbf168d80ce5a4b4c930b108 (retry)"
+    },
+    {
+      "request": 38,
+      "ip": "192.42.116.214",
+      "address": "0x6b758523e380cceeeea0c3e54dafbb1053603b7e"
+    },
+    {
+      "request": "38-retry-1",
+      "ip": "162.19.7.11",
+      "address": "0x6b758523e380cceeeea0c3e54dafbb1053603b7e (retry)"
+    },
+    {
+      "request": "38-retry-2",
+      "ip": "192.42.116.185",
+      "address": "0x6b758523e380cceeeea0c3e54dafbb1053603b7e (retry)"
+    },
+    {
+      "request": 39,
+      "ip": "185.220.101.144",
+      "address": "0x6bc9527bc2226130e941506d0f3afcabb2d7de14"
+    },
+    {
+      "request": "39-retry-1",
+      "ip": "192.42.116.209",
+      "address": "0x6bc9527bc2226130e941506d0f3afcabb2d7de14 (retry)"
+    },
+    {
+      "request": 40,
+      "ip": "192.76.153.253",
+      "address": "0x6bfe3a1bd917f8fe50eb624d50a0774af03a8b8e"
+    },
+    {
+      "request": "40-retry-1",
+      "ip": "172.104.243.155",
+      "address": "0x6bfe3a1bd917f8fe50eb624d50a0774af03a8b8e (retry)"
+    },
+    {
+      "request": 41,
+      "ip": "185.220.100.245",
+      "address": "0x6f5e2c0e56ff2d1187b1628d17b63e2dfa2f59b6"
+    },
+    {
+      "request": 42,
+      "ip": "204.76.203.41",
+      "address": "0x701e792bc3dd90d3ed707a3b8f78ac007d9aafb8"
+    },
+    {
+      "request": 43,
+      "ip": "185.220.101.15",
+      "address": "0x70e467af0cb9e68afaff0cad9408d51aec9b5c34"
+    },
+    {
+      "request": 44,
+      "ip": "45.80.158.249",
+      "address": "0x72450f10dbc7277b4b3441dc54e75b9bc462e8d6"
+    },
+    {
+      "request": 45,
+      "ip": "45.13.225.78",
+      "address": "0x786a05b29661a3cfdd45bc0a404a96363795f3fa"
+    },
+    {
+      "request": 46,
+      "ip": "51.15.59.15",
+      "address": "0x78a64770ca018469678fccef26eedc15063c1d28"
+    },
+    {
+      "request": 47,
+      "ip": "185.220.101.185",
+      "address": "0x7941dba51da5fb5ecc96b5b3cf73c27d8230cba2"
+    },
+    {
+      "request": "47-retry-1",
+      "ip": "45.66.35.20",
+      "address": "0x7941dba51da5fb5ecc96b5b3cf73c27d8230cba2 (retry)"
+    },
+    {
+      "request": 48,
+      "ip": "171.25.193.131",
+      "address": "0x79a3d44fac2fb34298c9937c46396ccf33e9559f"
+    },
+    {
+      "request": 49,
+      "ip": "171.25.193.20",
+      "address": "0x79a8667434df8778918c07d7ec8641d76190e2ae"
+    },
+    {
+      "request": 50,
+      "ip": "51.91.18.151",
+      "address": "0x7a33cad63bd0b75a4c453d2e4fcc2845df38712f"
+    },
+    {
+      "request": 51,
+      "ip": "107.189.11.111",
+      "address": "0x7a6d0f41641906665890ecd0e27a317e99800993"
+    },
+    {
+      "request": 52,
+      "ip": "109.71.252.97",
+      "address": "0x7ac1303054eb93927aadf6d30379ea2d13e539d4"
+    },
+    {
+      "request": 53,
+      "ip": "107.189.3.11",
+      "address": "0x7b5e27136381b7050fa14ca63d1748827ab63dd8"
+    },
+    {
+      "request": "53-retry-2",
+      "ip": "185.220.101.169",
+      "address": "0x7b5e27136381b7050fa14ca63d1748827ab63dd8 (retry)"
+    },
+    {
+      "request": 54,
+      "ip": "45.84.107.17",
+      "address": "0x7bb00bfebc4fafefc4a5eae0311dd45204a7cad7"
+    },
+    {
+      "request": 55,
+      "ip": "45.80.158.249",
+      "address": "0x7cf27c136041d03c8d5524888821d0eaba6a05f1"
+    },
+    {
+      "request": 56,
+      "ip": "5.253.247.27",
+      "address": "0x7d06ca5a872751a809efde78a06c9660ff862127"
+    },
+    {
+      "request": 57,
+      "ip": "45.84.107.174",
+      "address": "0x7d795a75551a3b5c54c77238c14854ca7a1ba3f6"
+    },
+    {
+      "request": 58,
+      "ip": "104.244.74.51",
+      "address": "0x83e0f1c06becedb479d7e635f787155e6f1f2e2d"
+    },
+    {
+      "request": 59,
+      "ip": "185.129.61.4",
+      "address": "0x8438a0a00bfe46081cf3635730b62dc99d1df4bc"
+    },
+    {
+      "request": 60,
+      "ip": "185.195.71.244",
+      "address": "0x8584c3e2d3d8f6d7755015db5ff154a3017c4786"
+    },
+    {
+      "request": 61,
+      "ip": "193.189.100.196",
+      "address": "0x8604ea5e711645f207cd53bd5df400000008362c"
+    },
+    {
+      "request": 62,
+      "ip": "45.84.107.200",
+      "address": "0x890e30594bf038628ddb8308fd6306db09d08950"
+    },
+    {
+      "request": 63,
+      "ip": "185.244.192.184",
+      "address": "0x89a6fea7c123c3ea32f1d525f6c58f0d93593a39"
+    },
+    {
+      "request": 64,
+      "ip": "88.80.26.3",
+      "address": "0x8b23de46c9a3e0d6448bcbb4d20403e34d30aadf"
+    },
+    {
+      "request": 65,
+      "ip": "185.220.101.35",
+      "address": "0x8d92d939c0c459a32a6992452dc2e3511e9f319e"
+    },
+    {
+      "request": 66,
+      "ip": "195.47.238.178",
+      "address": "0x94a1b8aadaca98f4ff903d6a524b7bbc058445fc"
+    },
+    {
+      "request": 67,
+      "ip": "107.189.3.148",
+      "address": "0x9712d71b112bfa9b1247a51ccc545e4c2aa43b30"
+    },
+    {
+      "request": "67-retry-1",
+      "ip": "185.34.33.2",
+      "address": "0x9712d71b112bfa9b1247a51ccc545e4c2aa43b30 (retry)"
+    },
+    {
+      "request": 68,
+      "ip": "192.42.116.198",
+      "address": "0x987c8f0e5c906784060a087a2694b3c5f1c97817"
+    },
+    {
+      "request": "68-retry-1",
+      "ip": "45.84.107.17",
+      "address": "0x987c8f0e5c906784060a087a2694b3c5f1c97817 (retry)"
+    },
+    {
+      "request": 69,
+      "ip": "37.114.50.142",
+      "address": "0x9cf7db3586e0089d932d2b8bc96e0da753c5c737"
+    },
+    {
+      "request": 70,
+      "ip": "45.84.107.76",
+      "address": "0x9d493e2eb19964e2e60750062520d59dc4169c62"
+    },
+    {
+      "request": 71,
+      "ip": "185.220.100.245",
+      "address": "0x9eadb75d844112cbf02ef82c0efcdcf7cfcae824"
+    },
+    {
+      "request": 72,
+      "ip": "107.189.5.7",
+      "address": "0xa22c38ba66affb6a5117e98a0df2bb9b653e75b7"
+    },
+    {
+      "request": 73,
+      "ip": "45.84.107.55",
+      "address": "0xa32c266df58fb884bc1c00f528dcad6674efd304"
+    },
+    {
+      "request": 74,
+      "ip": "192.42.116.199",
+      "address": "0xa3b30de0d20af1296c816fcbd67d4df86d4ac84b"
+    },
+    {
+      "request": 75,
+      "ip": "45.66.35.32",
+      "address": "0xa5c14f8c953467391b5807c6595461f0405ad4e2"
+    },
+    {
+      "request": 76,
+      "ip": "45.84.107.74",
+      "address": "0xa967c7f226a8d4e1149e3b795680bb8a3616c5e5"
+    },
+    {
+      "request": 77,
+      "ip": "192.42.116.184",
+      "address": "0xab8b421fc61f9d58e956459100cbce879d3308f1"
+    },
+    {
+      "request": "77-retry-1",
+      "ip": "185.220.101.44",
+      "address": "0xab8b421fc61f9d58e956459100cbce879d3308f1 (retry)"
+    },
+    {
+      "request": 78,
+      "ip": "185.220.101.17",
+      "address": "0xafa5b484ade9f3b062d286c3b150a1187f57b643"
+    },
+    {
+      "request": "78-retry-1",
+      "ip": "109.70.100.7",
+      "address": "0xafa5b484ade9f3b062d286c3b150a1187f57b643 (retry)"
+    },
+    {
+      "request": 79,
+      "ip": "185.220.101.137",
+      "address": "0xaff3be8f187a9315a0f7355fb11ed957e75efc5a"
+    },
+    {
+      "request": 80,
+      "ip": "185.220.100.243",
+      "address": "0xb29489b08aa6f28a70358f22a9c40fadebf41e60"
+    },
+    {
+      "request": 81,
+      "ip": "107.189.30.86",
+      "address": "0xb7134086a8a88867268214b8a2ce21f92a5b049b"
+    },
+    {
+      "request": 82,
+      "ip": "185.220.100.252",
+      "address": "0xb863ef9b3cb6619ba98080a48dba05612af52585"
+    },
+    {
+      "request": 83,
+      "ip": "185.220.101.162",
+      "address": "0xb98e61ac46b3f795fee203dabcbeafc3225fd598"
+    },
+    {
+      "request": 84,
+      "ip": "45.84.107.47",
+      "address": "0xb9d6851835e35d3da82feecc51370b1d632f9e07"
+    },
+    {
+      "request": "85-retry-1",
+      "ip": "192.42.116.210",
+      "address": "0xbbe50b3b20403646528924da884cbe0e6eab797b (retry)"
+    },
+    {
+      "request": "85-retry-2",
+      "ip": "185.220.101.4",
+      "address": "0xbbe50b3b20403646528924da884cbe0e6eab797b (retry)"
+    },
+    {
+      "request": 86,
+      "ip": "185.220.101.0",
+      "address": "0xbd108589bf327025989a351c451568764767c6eb"
+    },
+    {
+      "request": 88,
+      "ip": "185.220.101.9",
+      "address": "0xbf0c919d6517ea7d24ab1445f4ecb414941df688"
+    },
+    {
+      "request": "88-retry-1",
+      "ip": "185.129.62.62",
+      "address": "0xbf0c919d6517ea7d24ab1445f4ecb414941df688 (retry)"
+    },
+    {
+      "request": 89,
+      "ip": "62.133.60.208",
+      "address": "0xc1e4b23d5a5f45ae20486e2f8e6540b609fda61e"
+    },
+    {
+      "request": 90,
+      "ip": "185.100.85.24",
+      "address": "0xc257c17648f5b6b2f59c51e21f310b44e2c1f723"
+    },
+    {
+      "request": 91,
+      "ip": "185.220.100.250",
+      "address": "0xc8b0ab5ae9fd0082dc90a308d65c84025896e389"
+    },
+    {
+      "request": 92,
+      "ip": "45.13.225.69",
+      "address": "0xc95c4c089ea9ee3555338dee719edc8a5a2c56fe"
+    },
+    {
+      "request": 93,
+      "ip": "185.241.208.82",
+      "address": "0xcb040f7d0a3809d0f748056e3687aab0c558588f"
+    },
+    {
+      "request": 94,
+      "ip": "45.148.10.111",
+      "address": "0xcd210e8f21b6a1d2c9a832681220ad6c6792a360"
+    },
+    {
+      "request": 95,
+      "ip": "108.59.12.41",
+      "address": "0xcd3931c814f92494c1de35e89f9e166d805ebcfb"
+    },
+    {
+      "request": "95-retry-1",
+      "ip": "80.94.92.92",
+      "address": "0xcd3931c814f92494c1de35e89f9e166d805ebcfb (retry)"
+    },
+    {
+      "request": 96,
+      "ip": "178.20.55.16",
+      "address": "0xcf655bae9b51aeeea7d04c8b2611d457fad588a7"
+    },
+    {
+      "request": "96-retry-1",
+      "ip": "45.80.158.165",
+      "address": "0xcf655bae9b51aeeea7d04c8b2611d457fad588a7 (retry)"
+    },
+    {
+      "request": 97,
+      "ip": "192.42.116.174",
+      "address": "0xcfdf62de9d81024def4c4efc421d192860326fae"
+    },
+    {
+      "request": "97-retry-1",
+      "ip": "185.220.101.13",
+      "address": "0xcfdf62de9d81024def4c4efc421d192860326fae (retry)"
+    },
+    {
+      "request": 98,
+      "ip": "85.208.139.110",
+      "address": "0xd0ce6ab697befca4e0cc265a93b4e8b7f7c96ee2"
+    },
+    {
+      "request": 99,
+      "ip": "107.189.13.253",
+      "address": "0xd1ea6253c1b722dbae59c1a0f32a66f1ccf98d3c"
+    },
+    {
+      "request": 100,
+      "ip": "185.220.101.31",
+      "address": "0xd2688fcc1c2ebcb40589ef5855d554adac2ac1a2"
+    },
+    {
+      "request": 101,
+      "ip": "185.220.101.29",
+      "address": "0xd2740fa3cae559133612a680c8c9b074e3f71eff"
+    },
+    {
+      "request": "101-retry-1",
+      "ip": "88.80.26.3",
+      "address": "0xd2740fa3cae559133612a680c8c9b074e3f71eff (retry)"
+    },
+    {
+      "request": 102,
+      "ip": "45.84.107.101",
+      "address": "0xd46e2092b2ff22d0e0278187d4ceb75634a62737"
+    },
+    {
+      "request": 104,
+      "ip": "37.114.50.124",
+      "address": "0xd6b03cd1bf554e34a210f31942e2e93806555de9"
+    },
+    {
+      "request": "104-retry-1",
+      "ip": "185.220.101.13",
+      "address": "0xd6b03cd1bf554e34a210f31942e2e93806555de9 (retry)"
+    },
+    {
+      "request": 105,
+      "ip": "185.220.100.249",
+      "address": "0xd89a3da01690380ab61ffffcbccccc95cf3ee1ad"
+    },
+    {
+      "request": "105-retry-1",
+      "ip": "45.143.200.32",
+      "address": "0xd89a3da01690380ab61ffffcbccccc95cf3ee1ad (retry)"
+    },
+    {
+      "request": 106,
+      "ip": "185.220.101.140",
+      "address": "0xd9671512bb5f3d413bfcfa44338138f2b1554fe5"
+    },
+    {
+      "request": 107,
+      "ip": "45.94.31.68",
+      "address": "0xda11abd3f013e3600ad62b5a66ddbbc20a3d2084"
+    },
+    {
+      "request": 108,
+      "ip": "192.42.116.177",
+      "address": "0xe32cf6a5d391e994889631d7c20c037658908cb2"
+    },
+    {
+      "request": 109,
+      "ip": "204.8.96.114",
+      "address": "0xe70831d62a92cb702fc56431b037b5f8eeda6eb5"
+    },
+    {
+      "request": "109-retry-1",
+      "ip": "37.114.50.142",
+      "address": "0xe70831d62a92cb702fc56431b037b5f8eeda6eb5 (retry)"
+    },
+    {
+      "request": 110,
+      "ip": "45.84.107.74",
+      "address": "0xe96b6b8633d021771454e1acf0a32d3b1d26bfa9"
+    },
+    {
+      "request": 111,
+      "ip": "185.241.208.71",
+      "address": "0xe9e768fdb310a6bed7bf654db1fd3ea79b1bc603"
+    },
+    {
+      "request": 112,
+      "ip": "192.42.116.201",
+      "address": "0xeccdcfdb9c3f48d64aa9aa812208bc8a0009eaf8"
+    },
+    {
+      "request": "112-retry-1",
+      "ip": "45.141.215.63",
+      "address": "0xeccdcfdb9c3f48d64aa9aa812208bc8a0009eaf8 (retry)"
+    },
+    {
+      "request": "112-retry-2",
+      "ip": "185.220.101.139",
+      "address": "0xeccdcfdb9c3f48d64aa9aa812208bc8a0009eaf8 (retry)"
+    },
+    {
+      "request": 113,
+      "ip": "192.42.116.199",
+      "address": "0xee0f84d5721c467bd7765f335539ea9588298b4b"
+    },
+    {
+      "request": 114,
+      "ip": "185.220.101.25",
+      "address": "0xefb6d8397d65c1713c534ef803f1de089cba2fb7"
+    },
+    {
+      "request": 115,
+      "ip": "213.176.18.193",
+      "address": "0xf1ac3af2097b6f5d6917c645d0c5324c63b6f64d"
+    },
+    {
+      "request": 116,
+      "ip": "185.220.101.8",
+      "address": "0xf50cbcc17b3b42ee3d1553a0897df387e8c172ae"
+    },
+    {
+      "request": 117,
+      "ip": "45.84.107.74",
+      "address": "0xf6335e63ab0ea8b6b1c647894c1a22a87ba7b331"
+    },
+    {
+      "request": 118,
+      "ip": "185.220.101.136",
+      "address": "0xf6b638c65da1095eb95570b5df77833855a48e74"
+    },
+    {
+      "request": 119,
+      "ip": "192.42.116.202",
+      "address": "0xf72ee742dfe3831ef40924a55d788a0e0ad516d2"
+    },
+    {
+      "request": 120,
+      "ip": "89.58.26.216",
+      "address": "0xfb2175499ce63227051fd85b8992ba4e492e6726"
+    },
+    {
+      "request": "120-retry-1",
+      "ip": "192.76.153.253",
+      "address": "0xfb2175499ce63227051fd85b8992ba4e492e6726 (retry)"
+    },
+    {
+      "request": "120-retry-2",
+      "ip": "185.220.101.15",
+      "address": "0xfb2175499ce63227051fd85b8992ba4e492e6726 (retry)"
+    },
+    {
+      "request": 121,
+      "ip": "192.42.116.199",
+      "address": "0xfb839e26be3902934254ed5c529afa69db883977"
+    },
+    {
+      "request": 122,
       "ip": "45.84.107.128",
-      "address": "0x7f0298c8ffc109c4746fee3bf8d90749e95795ea"
+      "address": "0xfc23b245ea7244029a55d661fca0e244f133e971"
+    },
+    {
+      "request": 123,
+      "ip": "5.2.79.190",
+      "address": "0xfd5dd29dc995208f641dc6cf2450c2f2e250935e"
+    },
+    {
+      "request": 124,
+      "ip": "45.138.16.231",
+      "address": "0xfe7be7edfacd8b5b471d2f769f3dc72ccc512794"
+    },
+    {
+      "request": 125,
+      "ip": "176.65.149.69",
+      "address": "0xfe9c29fd14f5c5eda7071888a418cf3e423502c4"
+    },
+    {
+      "request": "125-retry-1",
+      "ip": "185.220.101.36",
+      "address": "0xfe9c29fd14f5c5eda7071888a418cf3e423502c4 (retry)"
+    },
+    {
+      "request": "125-retry-2",
+      "ip": "192.42.116.177",
+      "address": "0xfe9c29fd14f5c5eda7071888a418cf3e423502c4 (retry)"
+    },
+    {
+      "request": 126,
+      "ip": "45.84.107.198",
+      "address": "0xc6ce0762012e8ecdbbfb271c89f75d8a74bdf9bf"
+    },
+    {
+      "request": 127,
+      "ip": "185.150.28.13",
+      "address": "0xeac271bdb7d095e9766af7a26ca469d72aaf8a31"
+    },
+    {
+      "request": 128,
+      "ip": "89.58.26.216",
+      "address": "0x8659c407ac4480e4a6954a603278a300d6c33918"
+    },
+    {
+      "request": 129,
+      "ip": "45.84.107.17",
+      "address": "0xa2f05a1b27665e175339313043318da85dcdcba7"
+    },
+    {
+      "request": 130,
+      "ip": "176.65.149.84",
+      "address": "0x8f9f34ee0ea50a91767445b87577d6f5b2870cd8"
+    },
+    {
+      "request": 131,
+      "ip": "192.42.116.211",
+      "address": "0x89b295444babb44fdefed628159b619411ec60f2"
+    },
+    {
+      "request": "131-retry-1",
+      "ip": "192.42.116.194",
+      "address": "0x89b295444babb44fdefed628159b619411ec60f2 (retry)"
+    },
+    {
+      "request": 132,
+      "ip": "176.65.149.88",
+      "address": "0x3b60495cf81143cbb7e1016a5dba3be286d9a36b"
+    },
+    {
+      "request": 133,
+      "ip": "185.241.208.82",
+      "address": "0x568577a030449ab7f46b209229383e2d1b89412e"
+    },
+    {
+      "request": 134,
+      "ip": "171.25.193.40",
+      "address": "0xf215e69dbcdb414310c901f4c42e692dccaa8fb2"
+    },
+    {
+      "request": 135,
+      "ip": "45.141.215.63",
+      "address": "0xd4173b1c3cf5dedb60b6ade416244265c2353455"
+    },
+    {
+      "request": "135-retry-1",
+      "ip": "185.220.100.254",
+      "address": "0xd4173b1c3cf5dedb60b6ade416244265c2353455 (retry)"
+    },
+    {
+      "request": 136,
+      "ip": "45.141.215.28",
+      "address": "0x6d3142cefd0d3b69152e47addb224e64e5c05a52"
+    },
+    {
+      "request": "136-retry-1",
+      "ip": "45.84.107.97",
+      "address": "0x6d3142cefd0d3b69152e47addb224e64e5c05a52 (retry)"
+    },
+    {
+      "request": 137,
+      "ip": "192.42.116.197",
+      "address": "0xacdca174add318a099f3c6f0aa5c74b9e8502192"
+    },
+    {
+      "request": 138,
+      "ip": "203.55.81.2",
+      "address": "0xe3a210673795b876faaa9773e4cf3a4cedd96868"
+    },
+    {
+      "request": 139,
+      "ip": "185.220.101.152",
+      "address": "0x276845f52a087002a5e5f8b251e77954d5db7e01"
+    },
+    {
+      "request": 140,
+      "ip": "82.153.138.184",
+      "address": "0x08d8c778507fa425d4f8a1d2bf7aa44ad05c7d6f"
+    },
+    {
+      "request": "140-retry-1",
+      "ip": "185.220.101.182",
+      "address": "0x08d8c778507fa425d4f8a1d2bf7aa44ad05c7d6f (retry)"
+    },
+    {
+      "request": 141,
+      "ip": "45.84.107.172",
+      "address": "0x84fdcb617e8d039fcdf5fb87be6ccf75a2e180f7"
+    },
+    {
+      "request": 142,
+      "ip": "45.84.107.76",
+      "address": "0x22caee28c33f3956bd6eea1561c5c844220f8777"
+    },
+    {
+      "request": 143,
+      "ip": "109.70.100.10",
+      "address": "0xa46c6d2cdadc99390dae051e33887fc2d629334a"
+    },
+    {
+      "request": 144,
+      "ip": "195.47.238.178",
+      "address": "0xaa2e612e85232c85b242e9926cec445cb730c8be"
+    },
+    {
+      "request": "144-retry-1",
+      "ip": "193.189.100.201",
+      "address": "0xaa2e612e85232c85b242e9926cec445cb730c8be (retry)"
+    },
+    {
+      "request": 145,
+      "ip": "124.198.131.223",
+      "address": "0x4bce902c97c3dd986eaa8c25b0aa650d2911ced7"
+    },
+    {
+      "request": 146,
+      "ip": "192.76.153.253",
+      "address": "0x5c6ef54ccbb2b1024391cc453122c909ce6ba8b5"
+    },
+    {
+      "request": "146-retry-1",
+      "ip": "45.84.107.54",
+      "address": "0x5c6ef54ccbb2b1024391cc453122c909ce6ba8b5 (retry)"
+    },
+    {
+      "request": 147,
+      "ip": "109.70.100.8",
+      "address": "0x06a5a9b12bf919725e52a64116ec6ff7ae96d491"
+    },
+    {
+      "request": 148,
+      "ip": "176.65.149.203",
+      "address": "0x188a937125079db08478e8c0f9c31c0e60893563"
+    },
+    {
+      "request": 149,
+      "ip": "109.70.100.12",
+      "address": "0x4832db89f7ecab3e2835e4923f38fdf976311659"
     }
   ],
   "failedAddresses": [],
   "results": [
     {
-      "address": "0x654b22705f2a06cd6d9120d2ac0f7dd659ebfc6e",
-      "totalAsset": "$1,160+1.30%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "address": "0x080063b4801832aac728ec5c7d67cecd9f3b992f",
+      "totalAsset": "$61,988",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
       "success": true
     },
     {
-      "address": "0x6780a7be5ed085de037ccf1a3214d2a8d463879c",
-      "totalAsset": "$19+1.41%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
-      "success": true
-    },
-    {
-      "address": "0x6ca07af3682375fae1d3ad5b66e684c4d6aef783",
-      "totalAsset": "$2,120-2.53%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "success": true
-    },
-    {
-      "address": "0x707b5e0447cd57c69801b0c274c548800024e7f4",
-      "totalAsset": "$452+11.36%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      "success": true
-    },
-    {
-      "address": "0x71b585d876e426518a115c7a3185323474ff21e6",
-      "totalAsset": "$7,458+0.00%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
-      "success": true
-    },
-    {
-      "address": "0x73b1e850f1c360730ec67aeb3fa144a88327c6e7",
-      "totalAsset": "$249+2.21%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
+      "address": "0x088f276fa36cab062c48283d75ceb24aa8a6f771",
+      "totalAsset": "$39,073",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
       "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/121.0",
       "success": true
     },
     {
-      "address": "0x74ba16a57f81dffb573f0427030f1502833bb040",
-      "totalAsset": "$774+5.69%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
+      "address": "0x08cb7d04608cd6c3543edb287108bb4f8426b2a6",
+      "totalAsset": "$994",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x096529d95d7742a02532ed8c672fdafa87bc4747",
+      "totalAsset": "$468",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:109.0) Gecko/20100101 Firefox/115.0",
+      "success": true
+    },
+    {
+      "address": "0x0cb6271d8c43695841fe0d8c3cbb4ebe088ec2a3",
+      "totalAsset": "$8,694",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x0fcc60ba6ce0ea2cd094bf07f0cd7ea14e103772",
+      "totalAsset": "$5,147",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x12acf1f251f4d3c4a83d764b10e54c40f3013c38",
+      "totalAsset": "$49,326",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
       "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
       "success": true
     },
     {
-      "address": "0x7f0298c8ffc109c4746fee3bf8d90749e95795ea",
-      "totalAsset": "$0+100.00%",
-      "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
+      "address": "0x1e1e8a7335e29d93ec4c4e6b2e1fd64e0f307853",
+      "totalAsset": "$10,065",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x1f06b613e69c46186b15897f054cc16bc2bb10a0",
+      "totalAsset": "$21",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x20f5ceea3835fa91c0d16e1eeb6c5359fa22cc2f",
+      "totalAsset": "$10,286",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x229c15011fda808a2b98d487ca55291641740062",
+      "totalAsset": "$3,286",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
       "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x264ef753d3686d2f4a73a2852ced23ca3a6b6f76",
+      "totalAsset": "$100,389",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0x2a64bfe71241e6bfca8aea600eabc363465ef776",
+      "totalAsset": "$3,044",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x2ad3641c227a977cacc5ce25a26b4f6e596e9775",
+      "totalAsset": "$186,743",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x2b2e3da881eb5eb7db391c7934cd34941cd5fbee",
+      "totalAsset": "$251,234",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0x2d7235f2ccfdf29e346c591b9e97c05a493fc773",
+      "totalAsset": "$199,507",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x3606e39ed7cda9777b9469c40f5befa71a1eb6f6",
+      "totalAsset": "$3,017",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x393200a58da0047e1d4ae9559e3c9aa165ab2782",
+      "totalAsset": "$132,127",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x3a9f851cb0df5f88f10b0b461a8e9bbbb11ab575",
+      "totalAsset": "$1,738",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x3c5477063da98a605624847ffd9ef4d8267378fd",
+      "totalAsset": "$28,686",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+      "success": true
+    },
+    {
+      "address": "0x3d734009ff16366a1d3805e762663cb147136d80",
+      "totalAsset": "$6,595",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x3f411483f9d772a8be8419792abe0313e8931440",
+      "totalAsset": "$57,609",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x3f93bb776eb15c1296112ba80f332910fc41da4d",
+      "totalAsset": "$9,607",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+      "success": true
+    },
+    {
+      "address": "0x3fb6e49beddaeb14282066083fa43159b9b95f4e",
+      "totalAsset": "$38,080",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+      "success": true
+    },
+    {
+      "address": "0x42285a766208bb5c8bfd678758f7e475d42c36af",
+      "totalAsset": "$0",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x43cf3e8d2893bc02ca91a52e967c76ee6739958d",
+      "totalAsset": "$221,434",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0x468ad891d5c750f2b07a8d60ceb1bd83e1a9f141",
+      "totalAsset": "$10,121",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+      "success": true
+    },
+    {
+      "address": "0x47e60bdd18e186a68f4fcf6526b539d600626b1a",
+      "totalAsset": "$2,023",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x4bd684588dcc799625c0e66d02728ac8b4cf59af",
+      "totalAsset": "$11,296",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:109.0) Gecko/20100101 Firefox/115.0",
+      "success": true
+    },
+    {
+      "address": "0x4fc824f7047bfde9a0a8df810d196325b02c9248",
+      "totalAsset": "$92,047",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0x578b6122b8aca611b51fdd04bee8e1319ce1e96e",
+      "totalAsset": "$46,502",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0x586bbb69942efcbbdc6f711e37a97d2e372a0690",
+      "totalAsset": "$560",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+      "success": true
+    },
+    {
+      "address": "0x59e3ce17e18b5615de9a86d45768d21f23439b7a",
+      "totalAsset": "$4,353",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0x5c63cb44522c979f16e67ee4728349c149fb1ac6",
+      "totalAsset": "$9,041",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x5d73b898a0b1307ad54acf8c72f60edf07eb6f76",
+      "totalAsset": "$1,168",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+      "success": true
+    },
+    {
+      "address": "0x632cae603b960df08485a69c44b46abc74ec9ece",
+      "totalAsset": "$10,074",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x67d06422914a71f3cbf168d80ce5a4b4c930b108",
+      "totalAsset": "$1,591,423",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0x6b758523e380cceeeea0c3e54dafbb1053603b7e",
+      "totalAsset": "$3,306",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x6bc9527bc2226130e941506d0f3afcabb2d7de14",
+      "totalAsset": "$22,485",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0x6bfe3a1bd917f8fe50eb624d50a0774af03a8b8e",
+      "totalAsset": "$43,484",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x6f5e2c0e56ff2d1187b1628d17b63e2dfa2f59b6",
+      "totalAsset": "$0",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0x701e792bc3dd90d3ed707a3b8f78ac007d9aafb8",
+      "totalAsset": "$3,023",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x70e467af0cb9e68afaff0cad9408d51aec9b5c34",
+      "totalAsset": "$4,604",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x72450f10dbc7277b4b3441dc54e75b9bc462e8d6",
+      "totalAsset": "$1,002,520",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0x786a05b29661a3cfdd45bc0a404a96363795f3fa",
+      "totalAsset": "$69,670",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+      "success": true
+    },
+    {
+      "address": "0x78a64770ca018469678fccef26eedc15063c1d28",
+      "totalAsset": "$2,027",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0x7941dba51da5fb5ecc96b5b3cf73c27d8230cba2",
+      "totalAsset": "$2,912",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:109.0) Gecko/20100101 Firefox/115.0",
+      "success": true
+    },
+    {
+      "address": "0x79a3d44fac2fb34298c9937c46396ccf33e9559f",
+      "totalAsset": "$88,897",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x79a8667434df8778918c07d7ec8641d76190e2ae",
+      "totalAsset": "$10,020",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0x7a33cad63bd0b75a4c453d2e4fcc2845df38712f",
+      "totalAsset": "$171,927",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x7a6d0f41641906665890ecd0e27a317e99800993",
+      "totalAsset": "$33,813",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:109.0) Gecko/20100101 Firefox/115.0",
+      "success": true
+    },
+    {
+      "address": "0x7ac1303054eb93927aadf6d30379ea2d13e539d4",
+      "totalAsset": "$77,199",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x7b5e27136381b7050fa14ca63d1748827ab63dd8",
+      "totalAsset": "$69,562",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:109.0) Gecko/20100101 Firefox/115.0",
+      "success": true
+    },
+    {
+      "address": "0x7bb00bfebc4fafefc4a5eae0311dd45204a7cad7",
+      "totalAsset": "$0",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+      "success": true
+    },
+    {
+      "address": "0x7cf27c136041d03c8d5524888821d0eaba6a05f1",
+      "totalAsset": "$463,811",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+      "success": true
+    },
+    {
+      "address": "0x7d06ca5a872751a809efde78a06c9660ff862127",
+      "totalAsset": "$541",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:109.0) Gecko/20100101 Firefox/115.0",
+      "success": true
+    },
+    {
+      "address": "0x7d795a75551a3b5c54c77238c14854ca7a1ba3f6",
+      "totalAsset": "$991,123",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x83e0f1c06becedb479d7e635f787155e6f1f2e2d",
+      "totalAsset": "$9,682",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:109.0) Gecko/20100101 Firefox/115.0",
+      "success": true
+    },
+    {
+      "address": "0x8438a0a00bfe46081cf3635730b62dc99d1df4bc",
+      "totalAsset": "$2,854",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0x8584c3e2d3d8f6d7755015db5ff154a3017c4786",
+      "totalAsset": "$17",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+      "success": true
+    },
+    {
+      "address": "0x8604ea5e711645f207cd53bd5df400000008362c",
+      "totalAsset": "$11,936",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x890e30594bf038628ddb8308fd6306db09d08950",
+      "totalAsset": "$7,760",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+      "success": true
+    },
+    {
+      "address": "0x89a6fea7c123c3ea32f1d525f6c58f0d93593a39",
+      "totalAsset": "$578",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x8b23de46c9a3e0d6448bcbb4d20403e34d30aadf",
+      "totalAsset": "$3,269",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0x8d92d939c0c459a32a6992452dc2e3511e9f319e",
+      "totalAsset": "$10,079",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+      "success": true
+    },
+    {
+      "address": "0x94a1b8aadaca98f4ff903d6a524b7bbc058445fc",
+      "totalAsset": "$9,985",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0x9712d71b112bfa9b1247a51ccc545e4c2aa43b30",
+      "totalAsset": "$24,136",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x987c8f0e5c906784060a087a2694b3c5f1c97817",
+      "totalAsset": "$107,075",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x9cf7db3586e0089d932d2b8bc96e0da753c5c737",
+      "totalAsset": "$0",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0x9d493e2eb19964e2e60750062520d59dc4169c62",
+      "totalAsset": "$391,485",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x9eadb75d844112cbf02ef82c0efcdcf7cfcae824",
+      "totalAsset": "$9,798",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0xa22c38ba66affb6a5117e98a0df2bb9b653e75b7",
+      "totalAsset": "$9,990",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0xa32c266df58fb884bc1c00f528dcad6674efd304",
+      "totalAsset": "$0",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0xa3b30de0d20af1296c816fcbd67d4df86d4ac84b",
+      "totalAsset": "$56,784",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0xa5c14f8c953467391b5807c6595461f0405ad4e2",
+      "totalAsset": "$3,068",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0xa967c7f226a8d4e1149e3b795680bb8a3616c5e5",
+      "totalAsset": "$9,416",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0xab8b421fc61f9d58e956459100cbce879d3308f1",
+      "totalAsset": "$133,052",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0xafa5b484ade9f3b062d286c3b150a1187f57b643",
+      "totalAsset": "$75,766",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0xaff3be8f187a9315a0f7355fb11ed957e75efc5a",
+      "totalAsset": "$54,111",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+      "success": true
+    },
+    {
+      "address": "0xb29489b08aa6f28a70358f22a9c40fadebf41e60",
+      "totalAsset": "$6,121",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0xb7134086a8a88867268214b8a2ce21f92a5b049b",
+      "totalAsset": "$0",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0xb863ef9b3cb6619ba98080a48dba05612af52585",
+      "totalAsset": "$0",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+      "success": true
+    },
+    {
+      "address": "0xb98e61ac46b3f795fee203dabcbeafc3225fd598",
+      "totalAsset": "$7,022",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:109.0) Gecko/20100101 Firefox/115.0",
+      "success": true
+    },
+    {
+      "address": "0xb9d6851835e35d3da82feecc51370b1d632f9e07",
+      "totalAsset": "$10,006",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0xbbe50b3b20403646528924da884cbe0e6eab797b",
+      "totalAsset": "$42,523",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0xbd108589bf327025989a351c451568764767c6eb",
+      "totalAsset": "$994",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0xbd3a292dfdb9851e11f328c35085924e19aa5b48",
+      "totalAsset": "$58,746",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0xbf0c919d6517ea7d24ab1445f4ecb414941df688",
+      "totalAsset": "$10,580",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0xc1e4b23d5a5f45ae20486e2f8e6540b609fda61e",
+      "totalAsset": "$3,508",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:109.0) Gecko/20100101 Firefox/115.0",
+      "success": true
+    },
+    {
+      "address": "0xc257c17648f5b6b2f59c51e21f310b44e2c1f723",
+      "totalAsset": "$122,499",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0xc8b0ab5ae9fd0082dc90a308d65c84025896e389",
+      "totalAsset": "$10,016",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+      "success": true
+    },
+    {
+      "address": "0xc95c4c089ea9ee3555338dee719edc8a5a2c56fe",
+      "totalAsset": "$4,001",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+      "success": true
+    },
+    {
+      "address": "0xcb040f7d0a3809d0f748056e3687aab0c558588f",
+      "totalAsset": "$30",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0xcd210e8f21b6a1d2c9a832681220ad6c6792a360",
+      "totalAsset": "$7,386",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0xcd3931c814f92494c1de35e89f9e166d805ebcfb",
+      "totalAsset": "$10,339",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0xcf655bae9b51aeeea7d04c8b2611d457fad588a7",
+      "totalAsset": "$0",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0xcfdf62de9d81024def4c4efc421d192860326fae",
+      "totalAsset": "$106,797",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:109.0) Gecko/20100101 Firefox/115.0",
+      "success": true
+    },
+    {
+      "address": "0xd0ce6ab697befca4e0cc265a93b4e8b7f7c96ee2",
+      "totalAsset": "$4,475",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0xd1ea6253c1b722dbae59c1a0f32a66f1ccf98d3c",
+      "totalAsset": "$10,322",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:109.0) Gecko/20100101 Firefox/115.0",
+      "success": true
+    },
+    {
+      "address": "0xd2688fcc1c2ebcb40589ef5855d554adac2ac1a2",
+      "totalAsset": "$9,985",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0xd2740fa3cae559133612a680c8c9b074e3f71eff",
+      "totalAsset": "$2",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0xd46e2092b2ff22d0e0278187d4ceb75634a62737",
+      "totalAsset": "$30,877",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0xd5a5edd0deccb7819d2e57820c669aa9bf9f5346",
+      "totalAsset": "$37,002",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0xd6b03cd1bf554e34a210f31942e2e93806555de9",
+      "totalAsset": "$5,283",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0xd89a3da01690380ab61ffffcbccccc95cf3ee1ad",
+      "totalAsset": "$88,863",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+      "success": true
+    },
+    {
+      "address": "0xd9671512bb5f3d413bfcfa44338138f2b1554fe5",
+      "totalAsset": "$3,558",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0xda11abd3f013e3600ad62b5a66ddbbc20a3d2084",
+      "totalAsset": "$0",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0xe32cf6a5d391e994889631d7c20c037658908cb2",
+      "totalAsset": "$517",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0xe70831d62a92cb702fc56431b037b5f8eeda6eb5",
+      "totalAsset": "$5,354",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0xe96b6b8633d021771454e1acf0a32d3b1d26bfa9",
+      "totalAsset": "$4,767",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0xe9e768fdb310a6bed7bf654db1fd3ea79b1bc603",
+      "totalAsset": "$46,699",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0xeccdcfdb9c3f48d64aa9aa812208bc8a0009eaf8",
+      "totalAsset": "$0",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+      "success": true
+    },
+    {
+      "address": "0xee0f84d5721c467bd7765f335539ea9588298b4b",
+      "totalAsset": "$21,715",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0xefb6d8397d65c1713c534ef803f1de089cba2fb7",
+      "totalAsset": "$46,528",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0xf1ac3af2097b6f5d6917c645d0c5324c63b6f64d",
+      "totalAsset": "$6,090",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0xf50cbcc17b3b42ee3d1553a0897df387e8c172ae",
+      "totalAsset": "$4,649",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0xf6335e63ab0ea8b6b1c647894c1a22a87ba7b331",
+      "totalAsset": "$14,441",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0xf6b638c65da1095eb95570b5df77833855a48e74",
+      "totalAsset": "$58,814",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0xf72ee742dfe3831ef40924a55d788a0e0ad516d2",
+      "totalAsset": "$18,135",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0xfb2175499ce63227051fd85b8992ba4e492e6726",
+      "totalAsset": "$4,587",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0xfb839e26be3902934254ed5c529afa69db883977",
+      "totalAsset": "$20,802",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:109.0) Gecko/20100101 Firefox/115.0",
+      "success": true
+    },
+    {
+      "address": "0xfc23b245ea7244029a55d661fca0e244f133e971",
+      "totalAsset": "$3,511",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0xfd5dd29dc995208f641dc6cf2450c2f2e250935e",
+      "totalAsset": "$990",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+      "success": true
+    },
+    {
+      "address": "0xfe7be7edfacd8b5b471d2f769f3dc72ccc512794",
+      "totalAsset": "$1,770",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+      "success": true
+    },
+    {
+      "address": "0xfe9c29fd14f5c5eda7071888a418cf3e423502c4",
+      "totalAsset": "$6,902",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:109.0) Gecko/20100101 Firefox/115.0",
+      "success": true
+    },
+    {
+      "address": "0xc6ce0762012e8ecdbbfb271c89f75d8a74bdf9bf",
+      "totalAsset": "$102,391",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0xeac271bdb7d095e9766af7a26ca469d72aaf8a31",
+      "totalAsset": "$1,004",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0x8659c407ac4480e4a6954a603278a300d6c33918",
+      "totalAsset": "$5,245",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+      "success": true
+    },
+    {
+      "address": "0xa2f05a1b27665e175339313043318da85dcdcba7",
+      "totalAsset": "$69,656",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x8f9f34ee0ea50a91767445b87577d6f5b2870cd8",
+      "totalAsset": "$2,195",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x89b295444babb44fdefed628159b619411ec60f2",
+      "totalAsset": "$11,894",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0x3b60495cf81143cbb7e1016a5dba3be286d9a36b",
+      "totalAsset": "$3,264",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:109.0) Gecko/20100101 Firefox/115.0",
+      "success": true
+    },
+    {
+      "address": "0x568577a030449ab7f46b209229383e2d1b89412e",
+      "totalAsset": "$30,127",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0xf215e69dbcdb414310c901f4c42e692dccaa8fb2",
+      "totalAsset": "$7,868",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0xd4173b1c3cf5dedb60b6ade416244265c2353455",
+      "totalAsset": "$9,993",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:109.0) Gecko/20100101 Firefox/115.0",
+      "success": true
+    },
+    {
+      "address": "0x6d3142cefd0d3b69152e47addb224e64e5c05a52",
+      "totalAsset": "$62,538",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0xacdca174add318a099f3c6f0aa5c74b9e8502192",
+      "totalAsset": "$24,171",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0xe3a210673795b876faaa9773e4cf3a4cedd96868",
+      "totalAsset": "$9,443",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0x276845f52a087002a5e5f8b251e77954d5db7e01",
+      "totalAsset": "$59,040",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x08d8c778507fa425d4f8a1d2bf7aa44ad05c7d6f",
+      "totalAsset": "$925",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x84fdcb617e8d039fcdf5fb87be6ccf75a2e180f7",
+      "totalAsset": "$10,068",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+      "success": true
+    },
+    {
+      "address": "0x22caee28c33f3956bd6eea1561c5c844220f8777",
+      "totalAsset": "$1,181",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0xa46c6d2cdadc99390dae051e33887fc2d629334a",
+      "totalAsset": "$88,963",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+      "success": true
+    },
+    {
+      "address": "0xaa2e612e85232c85b242e9926cec445cb730c8be",
+      "totalAsset": "$10,900",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0x4bce902c97c3dd986eaa8c25b0aa650d2911ced7",
+      "totalAsset": "$10,241",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "success": true
+    },
+    {
+      "address": "0x5c6ef54ccbb2b1024391cc453122c909ce6ba8b5",
+      "totalAsset": "$9,627",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:109.0) Gecko/20100101 Firefox/115.0",
+      "success": true
+    },
+    {
+      "address": "0x06a5a9b12bf919725e52a64116ec6ff7ae96d491",
+      "totalAsset": "$4,700",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:109.0) Gecko/20100101 Firefox/115.0",
+      "success": true
+    },
+    {
+      "address": "0x188a937125079db08478e8c0f9c31c0e60893563",
+      "totalAsset": "$4,781",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "success": true
+    },
+    {
+      "address": "0x4832db89f7ecab3e2835e4923f38fdf976311659",
+      "totalAsset": "$1,174",
+      "selectorUsed": "[class*=\"HeaderInfo_totalAssetInner\"]",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "success": true
     }
   ]
