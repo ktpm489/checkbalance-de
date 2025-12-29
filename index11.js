@@ -397,7 +397,7 @@ async function scrapeMultipleAddresses(addresses) {
 
       // Attempt to scrape with automatic IP rotation on failure
       let result;
-      let maxIPRetries = 2; // Reduced from 3
+      let maxIPRetries = 3; 
       let ipRetryCount = 0;
       
       while (ipRetryCount <= maxIPRetries) {
