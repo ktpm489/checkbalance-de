@@ -52,11 +52,34 @@ function getRandomDelay(min, max) {
   return min + Math.floor(Math.random() * (max - min));
 }
 
+function formatDuration(ms) {
+  const seconds = Math.floor(ms / 1000);
+  const minutes = Math.floor(seconds / 60);
+  const hours = Math.floor(minutes / 60);
+  
+  if (hours > 0) {
+    return `${hours}h ${minutes % 60}m ${seconds % 60}s`;
+  } else if (minutes > 0) {
+    return `${minutes}m ${seconds % 60}s`;
+  } else {
+    return `${seconds}s`;
+  }
+}
+
+function formatTime(date) {
+  return date.toLocaleTimeString('en-US', { 
+    hour12: false, 
+    hour: '2-digit', 
+    minute: '2-digit', 
+    second: '2-digit' 
+  });
+}
+
 // Check if Tor proxy is accessible
 async function checkTorProxy() {
   return new Promise((resolve, reject) => {
     const socket = new net.Socket();
-    socket.setTimeout(3000); // Reduced from 5000
+    socket.setTimeout(3000);
 
     socket.connect(TOR_CONFIG.port, TOR_CONFIG.host, () => {
       console.log(`✓ Tor proxy is accessible at ${TOR_CONFIG.host}:${TOR_CONFIG.port}`);
@@ -123,11 +146,11 @@ async function forceNewCircuit() {
   }
 
   console.log("  Waiting for new Tor circuits...");
-  await new Promise((resolve) => setTimeout(resolve, 4000)); // Reduced from 8000
+  await new Promise((resolve) => setTimeout(resolve, 4000));
 }
 
 // Verify IP change with retries
-async function verifyIPChange(previousIP, maxAttempts = 3) { // Reduced from 5
+async function verifyIPChange(previousIP, maxAttempts = 3) {
   let attempts = 0;
   
   while (attempts < maxAttempts) {
@@ -138,13 +161,13 @@ async function verifyIPChange(previousIP, maxAttempts = 3) { // Reduced from 5
         return newIP;
       } else {
         console.log(`  ⚠️ IP unchanged (${newIP}), waiting longer... (${attempts + 1}/${maxAttempts})`);
-        await new Promise((resolve) => setTimeout(resolve, 3000)); // Reduced from 5000
+        await new Promise((resolve) => setTimeout(resolve, 3000));
         attempts++;
       }
     } catch (err) {
       console.log(`  Failed to check IP: ${err.message}`);
       attempts++;
-      await new Promise((resolve) => setTimeout(resolve, 2000)); // Reduced from 3000
+      await new Promise((resolve) => setTimeout(resolve, 2000));
     }
   }
   
@@ -163,16 +186,6 @@ async function scrapeDebankProfile(address, browser, retryCount = 0, maxRetries 
     const userAgent = getRandomUserAgent();
     const language = getRandomLanguage();
     
-    // // Set realistic viewport sizes
-    // const viewports = [
-    //   { width: 1920, height: 1080 },
-    //   { width: 1366, height: 768 },
-    //   { width: 1536, height: 864 },
-    //   { width: 1440, height: 900 }
-    // ];
-    // const viewport = viewports[Math.floor(Math.random() * viewports.length)];
-    
-    // await page.setViewport(viewport);
     await page.setUserAgent(userAgent);
     
     // Set additional headers to look more like a real browser
@@ -185,60 +198,24 @@ async function scrapeDebankProfile(address, browser, retryCount = 0, maxRetries 
       'Upgrade-Insecure-Requests': '1'
     });
 
-    // // Inject random mouse movements and realistic behavior
-    // await page.evaluateOnNewDocument(() => {
-    //   // Override navigator properties to avoid detection
-    //   Object.defineProperty(navigator, 'webdriver', {
-    //     get: () => undefined
-    //   });
-      
-    //   // Add realistic window properties
-    //   Object.defineProperty(navigator, 'plugins', {
-    //     get: () => [1, 2, 3, 4, 5]
-    //   });
-    // });
-
     console.log(`  Using User-Agent: ${userAgent.substring(0, 50)}...`);
-    // console.log(`  Viewport: ${viewport.width}x${viewport.height}`);
     console.log(`  Navigating to ${address}...`);
 
     // Navigate with timeout
     await page.goto(url, {
-      waitUntil: "networkidle0", // Changed from networkidle0 for faster loading
-      timeout: 60000, // Reduced from 90000
+      waitUntil: "networkidle0",
+      timeout: 60000,
     });
 
-    // Optimized wait time - reduced significantly
-    const pageLoadDelay = getRandomDelay(3000, 5000); // Reduced from 15000-35000
+    // Optimized wait time
+    const pageLoadDelay = getRandomDelay(3000, 5000);
     console.log(`  Waiting ${(pageLoadDelay / 1000).toFixed(2)}s for content to load...`);
     await new Promise((resolve) => setTimeout(resolve, pageLoadDelay));
 
-    // Simulate faster scrolling behavior
-    // await page.evaluate(async () => {
-    //   await new Promise((resolve) => {
-    //     let totalHeight = 0;
-    //     const distance = 150; // Increased from 100 for faster scroll
-    //     const timer = setInterval(() => {
-    //       const scrollHeight = document.body.scrollHeight;
-    //       window.scrollBy(0, distance);
-    //       totalHeight += distance;
-
-    //       if (totalHeight >= scrollHeight / 2) {
-    //         clearInterval(timer);
-    //         resolve();
-    //       }
-    //     }, 80); // Reduced from 100 for faster scroll
-    //   });
-    // });
-
-    // await new Promise((resolve) => setTimeout(resolve, 1000)); // Reduced from 2000
-
     // Enhanced selector list with more variations
-     const selectors = [
+    const selectors = [
       '.HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq',
-      // '.HeaderInfo_totalAssetInner__HyrdC',
       '[class*="HeaderInfo_totalAssetInner"]',
-      // '[class*="totalAsset"]'
     ];
 
     let totalAsset = null;
@@ -247,7 +224,7 @@ async function scrapeDebankProfile(address, browser, retryCount = 0, maxRetries 
     // Try each selector with optimized wait time
     for (const selector of selectors) {
       try {
-        await page.waitForSelector(selector, { timeout: 5000 }); // Reduced from 10000
+        await page.waitForSelector(selector, { timeout: 5000 });
         totalAsset = await page.$eval(selector, (el) => el.textContent.trim());
         if (totalAsset && totalAsset !== '' && totalAsset !== '0' && !totalAsset.includes('undefined')) {
           selectorUsed = selector;
@@ -285,7 +262,6 @@ async function scrapeDebankProfile(address, browser, retryCount = 0, maxRetries 
       totalAsset,
       selectorUsed,
       userAgent: userAgent,
-    //   viewport: `${viewport.width}x${viewport.height}`,
       success: true
     };
 
@@ -328,8 +304,27 @@ async function scrapeMultipleAddresses(addresses) {
   const results = [];
   const ipLog = [];
   const failedAddresses = [];
+  
+  // Time tracking
+  const startTime = Date.now();
+  const startDate = new Date();
+  
+  // Estimate time per address (including all delays and retries)
+  // Average: ~15-25 seconds per address with IP rotation
+  const estimatedTimePerAddress = 20000; // 20 seconds average
+  const estimatedTotalTime = addresses.length * estimatedTimePerAddress;
+  const estimatedEndTime = new Date(startTime + estimatedTotalTime);
 
   try {
+    console.log("\n" + "=".repeat(60));
+    console.log("TIME ESTIMATION");
+    console.log("=".repeat(60));
+    console.log(`Start Time: ${formatTime(startDate)}`);
+    console.log(`Estimated End Time: ${formatTime(estimatedEndTime)}`);
+    console.log(`Estimated Duration: ${formatDuration(estimatedTotalTime)}`);
+    console.log(`Total Addresses: ${addresses.length}`);
+    console.log("=".repeat(60) + "\n");
+
     console.log("Checking Tor proxy accessibility...");
     await checkTorProxy();
 
@@ -342,8 +337,22 @@ async function scrapeMultipleAddresses(addresses) {
 
     for (let i = 0; i < addresses.length; i++) {
       const address = addresses[i];
+      const addressStartTime = Date.now();
+      
       console.log(`\n[${"=".repeat(60)}]`);
       console.log(`[${i + 1}/${addresses.length}] Processing: ${address}`);
+      
+      // Calculate progress and updated ETA
+      if (i > 0) {
+        const elapsedTime = Date.now() - startTime;
+        const averageTimePerAddress = elapsedTime / i;
+        const remainingAddresses = addresses.length - i;
+        const estimatedRemainingTime = remainingAddresses * averageTimePerAddress;
+        const updatedEndTime = new Date(Date.now() + estimatedRemainingTime);
+        
+        console.log(`Progress: ${((i / addresses.length) * 100).toFixed(1)}% | Elapsed: ${formatDuration(elapsedTime)} | ETA: ${formatTime(updatedEndTime)} (${formatDuration(estimatedRemainingTime)} remaining)`);
+      }
+      
       console.log(`[${"=".repeat(60)}]`);
 
       // Force new circuit and close browser for each request (except first)
@@ -361,10 +370,9 @@ async function scrapeMultipleAddresses(addresses) {
           ipLog.push({ request: i + 1, ip: newIP, address });
         } catch (err) {
           console.log(`  ⚠️ Warning: ${err.message}`);
-          // Continue anyway
         }
 
-        const circuitDelay = getRandomDelay(2000, 3000); // Reduced from 3000-6000
+        const circuitDelay = getRandomDelay(2000, 3000);
         console.log(`  Waiting ${(circuitDelay / 1000).toFixed(2)}s for circuit stabilization...`);
         await new Promise((resolve) => setTimeout(resolve, circuitDelay));
       }
@@ -390,17 +398,15 @@ async function scrapeMultipleAddresses(addresses) {
 
       // Attempt to scrape with automatic IP rotation on failure
       let result;
-      let maxIPRetries = 3; // Maximum number of IP changes for this address
+      let maxIPRetries = 3;
       let ipRetryCount = 0;
       
       while (ipRetryCount <= maxIPRetries) {
         result = await scrapeDebankProfile(address, browser, ipRetryCount);
         
-        // Check if we need to change IP and retry
         if (result.needsIPChange && ipRetryCount < maxIPRetries) {
           console.log(`\n  🔄 Changing IP for retry...`);
           
-          // Close browser and force new circuit
           if (browser) {
             await browser.close();
             browser = null;
@@ -420,11 +426,10 @@ async function scrapeMultipleAddresses(addresses) {
             console.log(`  ⚠️ Warning: ${err.message}`);
           }
           
-          const circuitDelay = getRandomDelay(2000, 4000); // Reduced from 3000-6000
+          const circuitDelay = getRandomDelay(2000, 4000);
           console.log(`  Waiting ${(circuitDelay / 1000).toFixed(2)}s for circuit stabilization...`);
           await new Promise((resolve) => setTimeout(resolve, circuitDelay));
           
-          // Relaunch browser
           console.log("\n  Relaunching browser with new Tor circuit...");
           browser = await puppeteer.launch({
             headless: "new",
@@ -443,10 +448,13 @@ async function scrapeMultipleAddresses(addresses) {
           
           ipRetryCount++;
         } else {
-          // Either succeeded or exhausted retries
           break;
         }
       }
+      
+      const addressEndTime = Date.now();
+      const addressDuration = addressEndTime - addressStartTime;
+      console.log(`  ⏱️ Address completed in ${formatDuration(addressDuration)}`);
       
       results.push(result);
       
@@ -454,15 +462,31 @@ async function scrapeMultipleAddresses(addresses) {
         failedAddresses.push(address);
       }
 
-      // Optimized delay between requests
+      // Delay between requests
       if (i < addresses.length - 1) {
-        const requestDelay = getRandomDelay(1000, 2000); // Reduced from 8000-20000
+        const requestDelay = getRandomDelay(1000, 2000);
         console.log(`\n  ⏱️ Waiting ${(requestDelay / 1000).toFixed(2)}s before next request...`);
         await new Promise((resolve) => setTimeout(resolve, requestDelay));
       }
     }
 
-    // Display summary
+    const endTime = Date.now();
+    const endDate = new Date();
+    const totalDuration = endTime - startTime;
+
+    // Display time summary
+    console.log("\n" + "=".repeat(60));
+    console.log("TIME SUMMARY");
+    console.log("=".repeat(60));
+    console.log(`Start Time: ${formatTime(startDate)}`);
+    console.log(`End Time: ${formatTime(endDate)}`);
+    console.log(`Total Duration: ${formatDuration(totalDuration)}`);
+    console.log(`Average per Address: ${formatDuration(totalDuration / addresses.length)}`);
+    console.log(`Estimated Duration: ${formatDuration(estimatedTotalTime)}`);
+    console.log(`Difference: ${formatDuration(Math.abs(totalDuration - estimatedTotalTime))} ${totalDuration > estimatedTotalTime ? 'slower' : 'faster'} than estimate`);
+    console.log("=".repeat(60));
+
+    // Display IP rotation log
     console.log("\n" + "=".repeat(60));
     console.log("IP ROTATION LOG");
     console.log("=".repeat(60));
@@ -470,6 +494,7 @@ async function scrapeMultipleAddresses(addresses) {
       console.log(`Request ${entry.request}: ${entry.ip} (${entry.address})`);
     });
 
+    // Display failed addresses
     console.log("\n" + "=".repeat(60));
     console.log("FAILED ADDRESSES");
     console.log("=".repeat(60));
@@ -482,11 +507,32 @@ async function scrapeMultipleAddresses(addresses) {
       console.log(`\nTotal failed: ${failedAddresses.length}/${addresses.length}`);
     }
 
-    return { results, ipLog, failedAddresses };
+    return { 
+      results, 
+      ipLog, 
+      failedAddresses,
+      timing: {
+        startTime: startDate.toISOString(),
+        endTime: endDate.toISOString(),
+        durationMs: totalDuration,
+        durationFormatted: formatDuration(totalDuration),
+        averagePerAddressMs: totalDuration / addresses.length,
+        averagePerAddressFormatted: formatDuration(totalDuration / addresses.length)
+      }
+    };
 
   } catch (error) {
     console.error("Fatal error:", error.message);
-    return { results, ipLog, failedAddresses };
+    return { 
+      results, 
+      ipLog, 
+      failedAddresses,
+      timing: {
+        startTime: startDate.toISOString(),
+        durationMs: Date.now() - startTime,
+        error: error.message
+      }
+    };
   } finally {
     if (browser) {
       await browser.close();
@@ -514,7 +560,7 @@ const addresses = raw
 const walletAddresses = Array.from(new Set(addresses));
 
 scrapeMultipleAddresses(walletAddresses)
-  .then(({ results, ipLog, failedAddresses }) => {
+  .then(({ results, ipLog, failedAddresses, timing }) => {
     console.log("\n" + "=".repeat(60));
     console.log("RESULTS SUMMARY");
     console.log("=".repeat(60));
@@ -543,6 +589,7 @@ scrapeMultipleAddresses(walletAddresses)
     // Save comprehensive results
     const output = {
       timestamp: new Date().toISOString(),
+      timing,
       summary: {
         total: results.length,
         successful: successCount,

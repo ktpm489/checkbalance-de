@@ -1,5 +1,13 @@
 {
-  "timestamp": "2025-12-29T01:45:34.661Z",
+  "timestamp": "2025-12-29T01:57:06.181Z",
+  "timing": {
+    "startTime": "2025-12-29T01:51:56.658Z",
+    "endTime": "2025-12-29T01:57:05.955Z",
+    "durationMs": 309297,
+    "durationFormatted": "5m 9s",
+    "averagePerAddressMs": 38662.125,
+    "averagePerAddressFormatted": "38s"
+  },
   "summary": {
     "total": 8,
     "successful": 8,
@@ -9,47 +17,52 @@
   "ipRotationLog": [
     {
       "request": 0,
-      "ip": "107.189.5.121",
+      "ip": "193.189.100.199",
       "address": "Initial"
     },
     {
-      "request": "1-retry-1",
-      "ip": "171.25.193.20",
-      "address": "0x654b22705f2a06cd6d9120d2ac0f7dd659ebfc6e (retry)"
-    },
-    {
       "request": 2,
-      "ip": "171.25.193.82",
+      "ip": "192.42.116.218",
       "address": "0x6780a7be5ed085de037ccf1a3214d2a8d463879c"
     },
     {
       "request": 3,
-      "ip": "104.244.78.233",
+      "ip": "45.84.107.101",
       "address": "0x6ca07af3682375fae1d3ad5b66e684c4d6aef783"
     },
     {
       "request": 4,
-      "ip": "80.67.167.81",
+      "ip": "185.241.208.82",
       "address": "0x707b5e0447cd57c69801b0c274c548800024e7f4"
     },
     {
       "request": 5,
-      "ip": "192.42.116.173",
+      "ip": "194.32.107.87",
       "address": "0x71b585d876e426518a115c7a3185323474ff21e6"
     },
     {
+      "request": "5-retry-1",
+      "ip": "109.70.100.12",
+      "address": "0x71b585d876e426518a115c7a3185323474ff21e6 (retry)"
+    },
+    {
       "request": 6,
-      "ip": "45.84.107.74",
+      "ip": "185.220.101.2",
       "address": "0x73b1e850f1c360730ec67aeb3fa144a88327c6e7"
     },
     {
       "request": 7,
-      "ip": "93.94.51.243",
+      "ip": "192.42.116.210",
       "address": "0x74ba16a57f81dffb573f0427030f1502833bb040"
     },
     {
+      "request": "7-retry-1",
+      "ip": "109.70.100.10",
+      "address": "0x74ba16a57f81dffb573f0427030f1502833bb040 (retry)"
+    },
+    {
       "request": 8,
-      "ip": "192.42.116.174",
+      "ip": "185.220.101.12",
       "address": "0x7f0298c8ffc109c4746fee3bf8d90749e95795ea"
     }
   ],
@@ -57,30 +70,30 @@
   "results": [
     {
       "address": "0x654b22705f2a06cd6d9120d2ac0f7dd659ebfc6e",
-      "totalAsset": "$1,159+1.18%",
+      "totalAsset": "$1,159+1.19%",
       "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+      "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
       "success": true
     },
     {
       "address": "0x6780a7be5ed085de037ccf1a3214d2a8d463879c",
-      "totalAsset": "$19+1.27%",
+      "totalAsset": "$19+1.21%",
       "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:109.0) Gecko/20100101 Firefox/115.0",
       "success": true
     },
     {
       "address": "0x6ca07af3682375fae1d3ad5b66e684c4d6aef783",
-      "totalAsset": "$2,112-3.28%",
+      "totalAsset": "$2,116-3.10%",
       "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
       "success": true
     },
     {
       "address": "0x707b5e0447cd57c69801b0c274c548800024e7f4",
-      "totalAsset": "$452+11.17%",
+      "totalAsset": "$452+11.22%",
       "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:109.0) Gecko/20100101 Firefox/115.0",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       "success": true
     },
     {
@@ -92,23 +105,23 @@
     },
     {
       "address": "0x73b1e850f1c360730ec67aeb3fa144a88327c6e7",
-      "totalAsset": "$248+2.11%",
+      "totalAsset": "$248+2.13%",
       "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
       "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
       "success": true
     },
     {
       "address": "0x74ba16a57f81dffb573f0427030f1502833bb040",
-      "totalAsset": "$774+6.20%",
+      "totalAsset": "$773+5.70%",
       "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:109.0) Gecko/20100101 Firefox/115.0",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
       "success": true
     },
     {
       "address": "0x7f0298c8ffc109c4746fee3bf8d90749e95795ea",
-      "totalAsset": "$0+1.29%",
+      "totalAsset": "$0+100.00%",
       "selectorUsed": ".HeaderInfo_totalAssetInner__HyrdC.HeaderInfo_curveEnable__HVRYq",
-      "userAgent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:109.0) Gecko/20100101 Firefox/115.0",
       "success": true
     }
   ]
