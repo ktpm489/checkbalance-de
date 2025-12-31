@@ -1,11 +1,12 @@
 address,amount_usd,success,selector_used,user_agent
-0x42285a766208bb5c8bfd678758f7e475d42c36af,0,true,[class*=""HeaderInfo_totalAssetInner""],"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+0x42285a766208bb5c8bfd678758f7e475d42c36af,0,true,[class*=""HeaderInfo_totalAssetInner""],"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 0x6f5e2c0e56ff2d1187b1628d17b63e2dfa2f59b6,0,true,[class*=""HeaderInfo_totalAssetInner""],Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/121.0
-0x7bb00bfebc4fafefc4a5eae0311dd45204a7cad7,0,true,[class*=""HeaderInfo_totalAssetInner""],"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15"
-0x9cf7db3586e0089d932d2b8bc96e0da753c5c737,0,true,[class*=""HeaderInfo_totalAssetInner""],Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0
-0xa32c266df58fb884bc1c00f528dcad6674efd304,0,true,[class*=""HeaderInfo_totalAssetInner""],"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
-0xb7134086a8a88867268214b8a2ce21f92a5b049b,0,true,[class*=""HeaderInfo_totalAssetInner""],Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0
-0xb863ef9b3cb6619ba98080a48dba05612af52585,0,true,[class*=""HeaderInfo_totalAssetInner""],"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15"
-0xcf655bae9b51aeeea7d04c8b2611d457fad588a7,0,true,[class*=""HeaderInfo_totalAssetInner""],"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-0xda11abd3f013e3600ad62b5a66ddbbc20a3d2084,0,true,[class*=""HeaderInfo_totalAssetInner""],Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/121.0
-0xeccdcfdb9c3f48d64aa9aa812208bc8a0009eaf8,0,true,[class*=""HeaderInfo_totalAssetInner""],"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15"
+0x7bb00bfebc4fafefc4a5eae0311dd45204a7cad7,0,true,[class*=""HeaderInfo_totalAssetInner""],"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+0x9cf7db3586e0089d932d2b8bc96e0da753c5c737,0,true,[class*=""HeaderInfo_totalAssetInner""],Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:109.0) Gecko/20100101 Firefox/115.0
+0xa32c266df58fb884bc1c00f528dcad6674efd304,0,true,[class*=""HeaderInfo_totalAssetInner""],"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+0xb7134086a8a88867268214b8a2ce21f92a5b049b,0,true,[class*=""HeaderInfo_totalAssetInner""],"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+0xb863ef9b3cb6619ba98080a48dba05612af52585,0,true,[class*=""HeaderInfo_totalAssetInner""],"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+0xcf655bae9b51aeeea7d04c8b2611d457fad588a7,0,true,[class*=""HeaderInfo_totalAssetInner""],Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/121.0
+0xda11abd3f013e3600ad62b5a66ddbbc20a3d2084,0,true,[class*=""HeaderInfo_totalAssetInner""],Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7; rv:109.0) Gecko/20100101 Firefox/115.0
+0xeccdcfdb9c3f48d64aa9aa812208bc8a0009eaf8,0,true,[class*=""HeaderInfo_totalAssetInner""],"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+0x463a4d6a571d2086e205545e0e5f79078ac8cbd7,0,true,[class*=""HeaderInfo_totalAssetInner""],Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/121.0

@@ -397,7 +397,7 @@ async function scrapeMultipleAddresses(addresses) {
 
       // Attempt to scrape with automatic IP rotation on failure
       let result;
-      let maxIPRetries = 3; 
+      let maxIPRetries = 6; 
       let ipRetryCount = 0;
       
       while (ipRetryCount <= maxIPRetries) {
@@ -690,7 +690,21 @@ const raw = `
 0x5c6ef54ccbb2b1024391cc453122c909ce6ba8b5
 0x06a5a9b12bf919725e52a64116ec6ff7ae96d491
 0x188a937125079db08478e8c0f9c31c0e60893563
-0x4832db89f7ecab3e2835e4923f38fdf976311659`;
+0x4832db89f7ecab3e2835e4923f38fdf976311659
+0xce52e1bda9eda1274eb4b100eb23810a3dba1bff
+0x9392084e954629e5fd7f34a73ddc89fca38bd080
+0x463a4d6a571d2086e205545e0e5f79078ac8cbd7
+0xd5d02162bc6198911abf3303e42d5766ebd9d4c8
+0x4153a915dd451a554c95f3e8e2b885fd735412ca
+0x2594cc7dfe58181dfe8db7e0119ae89423094ae2
+0x4aa6ee16b34a6bd6b0562192af9277c6519fd6ad
+0x57e314f42bd13f620130805e63c80389613fb224
+0x43247e1f3d04add528d3ebba4f0eb044776f45c4
+0x099cb28be606582241f6003fbd3cfe8bea798043
+0x406fa1e73812f1457e754eeeb78911927ec67a50
+0x8346de8a7f3d6aeb62bd736aa64b8d2594f3141e
+0xa505905535d2e00118a10b6e277d1db5a409945f
+0x7bab705e0ac1393da9b8fa388abd6d5027f2bde4`;
 
 const addresses = raw
   .trim()
