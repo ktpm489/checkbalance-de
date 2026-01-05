@@ -401,7 +401,7 @@ async function scrapeMultipleAddresses(addresses) {
       let ipRetryCount = 0;
       
       while (ipRetryCount <= maxIPRetries) {
-        result = await scrapeDebankProfile(address, browser, ipRetryCount);
+        result = await scrapeDebankProfile(address, browser, ipRetryCount ,maxIPRetries);
         
         if (result.needsIPChange && ipRetryCount < maxIPRetries) {
           console.log(`\n  🔄 Changing IP for retry...`);
@@ -704,7 +704,17 @@ const raw = `
 0x406fa1e73812f1457e754eeeb78911927ec67a50
 0x8346de8a7f3d6aeb62bd736aa64b8d2594f3141e
 0xa505905535d2e00118a10b6e277d1db5a409945f
-0x7bab705e0ac1393da9b8fa388abd6d5027f2bde4`;
+0x7bab705e0ac1393da9b8fa388abd6d5027f2bde4
+0x3ae5b63d58955d9905c47eff9923c93a3ac69ffe
+0xfcf32b477ca96d328f69b9af0e7be2fd43a7e75a
+0x2239b4f45949aef8b028f098da2d1dc8b4b59cc4
+0xbe8884bde43fe6b5e4d61bb6d8217eee5a9674cb
+0xa573d5dc5f33164820d16bcf8587266883ca39e1
+0xa77f11fb63066f0d328dca9a5a003478a759c822
+0xa94f0be3eeafd03c791ec21b7bc7a4ee6009c648
+0x884b48cbcac2e8270800e6fa0487cb5bc06979e0
+0x897c11df9b0b9eb5e9ffdb4e23033b78e157e14b
+0xd420a943a0bfa449408df6a064afda3ab3c55493`;
 
 const addresses = raw
   .trim()
